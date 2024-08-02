@@ -1,0 +1,96 @@
+Kenny's English Website
+
+1. Define The Project
+For a client's english teaching course
+Was using wix(looks cheap) but wants better UI
+
+・Target Audience
+people who wants to learn english(not for the client's students)
+
+2. Plan The Project
+・Gather website content: text, images, videos etc
+
+・What pages the site needs
+1. Home
+2. Whats different?
+3. Why Kenny's English
+4. Course Detail
+5. Pricing
+6. About
+7. Free Trial
+
+
+・What sections each page needs
+
+
+
+3. Sketch Layout and Component Ideas
+・What components and layouts you need
+
+・Get ideas out of your head
+(Sketch e.g. Figma)
+
+
+
+
+4. Design and Buid Website
+・Start to build with HTML and CSS
+
+・Use client's branding
+(Colors, typograpy, icons, etc)
+
+5. Test and Optimize
+・Make sure it works in all major browsers
+(Firefox, chrome, edge)
+
+・Test it on mobile devices
+
+・Run Lighthouse performance test in Chrome Devtools
+
+・Think about Search Engine Optimization(SEO)
+
+6. Launch the Website
+・Upload website files to a hosting platform
+
+・Choose and buy domain name that represents the website
+
+7. Maintain and Keep Updating Website
+・Install analytics software
+(e.g. Google Analytics or Fathom)
+
+・Get statistics about website users
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
