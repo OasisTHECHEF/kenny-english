@@ -9,38 +9,43 @@
     <title>Kenny's English</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 </head>
 
 <body>
 <!-- Header -->
 <div class="top-area">
-    <header>
+    <header class="DownMove" id="header">
         <div class="logo" id="logo">
-            <h1 class="hd_h1">
-                <a href="/">オンライン英会話<br>Kenny's English</a>
+            <h1 class="hd-h1">
+                <a href="/" class="home-logo">オンライン英会話<br>Kenny's English</a>
             </h1>
         </div>
 
-        <nav class="hd_nav">
-            <ul>
+        <nav class="hd-nav">
+            <ul id="mv-navi">
                 <li>
-                    <a href="">トップ</a>
+                    <a href="#pg-1">トップ</a>
                 </li>
                 <li>
-                    <a href="">3つの特徴</a>
+                    <a href="#pg-2">3つの特徴</a>
                 </li>
                 <li>
-                    <a href="">選ばれる理由</a>
+                    <a href="#pg-3">選ばれる理由</a>
                 </li>
                 <li>
-                    <a href="">レッスン内容</a>
+                    <a href="#pg-4">レッスン内容</a>
                 </li>
                 <li>
                     <a href="">料金</a>
                 </li>
                 <li>
                     <a href="">インストラクター紹介</a>
+                </li>
+                <li>
+                    <a href="" class="lsn-btn">無料体験レッスン</a>
                 </li>
             </ul>
         </nav>
@@ -49,16 +54,43 @@
 </div>
 
     <main>
-        <section class="top" id="top">
-            <div>
-                <h4>「英語脳へ改造」</h4>
-                <h3>オンライン英会話</h3>
+        <section class="pg-1" id="pg-1">
+            <div class="top-text">
+                <h1 class="underline">「英語脳へ改造」</h1>
+                <h2>オンライン英会話</h2>
                 <h1>Kenny's English</h1>
+                <a href="" class="lsn-btn">無料体験レッスン</a>
+            </div>
+        </section>
+
+        <section class="pg-2" id="pg-2">
+            <div class="chara-text">
+                <h1>「英語で自分に自信をつけよう」</h1>
+                <p>職場で英会話を使う機会があるが上手く伝えられない、海外の人と話す勇気が欲しい</p>
+                <p>英語を通して自分の目標を成し遂げたい、世界で通用する人材になりたい</p>
+                <p>Kenny's Englishでは「英語脳へ改造」をモットーに、あなたの願いや想いをサポートさせていただくのがKenny's English</p>
+            </div>
+        </section>
+
+        <section class="pg-3" id="pg-3">
+            <div>
+                <p>「独自の伝授法でカタカナを通して。。。」</p>
+                <p>「カタカナ」を抜く</p>
+            </div>
+        </section>
+
+        <section class="pg-4" id="pg-4">
+            <div>
+                <p>test test</p>
             </div>
         </section>
     </main>
 
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
+    <!--Javascript-->
+    <script src="js/movement.js" defer></script>
 
 
 </body>

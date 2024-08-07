@@ -1,5 +1,18 @@
+@charset "UTF-8";
+
+/*
+*
+* --- Kenny's English
+*
+*/
+
 * {
     box-sizing: border-box;
+ }
+
+ html {
+  color: #000;
+  background: #fff;
  }
 
 
@@ -8,28 +21,102 @@
     padding: 0;
     font-family: "Hiragino Kku";
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #e6e6e6;
+    background-color: #f5f5f5;
  }
 
- header {
-    width: 100%;
-    min-height: 15%;
-    padding: 30px 4% 10px;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    display: flex;
-    align-items: center;
+ #header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
  }
 
- .hd_h1 {
+/* Header Up & Down Movement */
+#header.Upmove {
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+#header.DownMove {
+  animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ▼ EExtra Styling for Heade List */
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  color: #666;
+  padding:10px;
+  transition:all 0.3s;
+}
+
+nav ul li.current a,
+nav ul li a:hover,
+nav ul li a:active{
+  color:#D300C5; 
+}
+
+ .hd-h1 {
    margin: 0; padding: 0;
    font-size: 20px;
  }
 
  a {
    text-decoration: none;
-   color: #9568ed;
+   color: #696969;
+   /* background: linear-gradient(#FFD600, #FF7A00, #FF0069, #D300C5, #7638FA); */
+ }
+
+ .home-logo {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin:  0 auto 5%;
+  background: linear-gradient(90deg, #FFD600 0%, #FF7A00 40%, #FF0069 80%, #D300C5, #7638FA);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+ }
+
+ .lsn-btn {
+  background: linear-gradient(#FFD600, #FF7A00, #FF0069, #D300C5, #7638FA);
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 6px;
  }
 
 nav {
@@ -47,4 +134,63 @@ nav {
    font-size: 14px;
  }
 
+
+/* ▼ Main Page */
+main {
+  padding-top: 70px;
+}
+
+section {
+  padding: 30px;
+}
+
+/* ▼ Page One */
+.pg-1 {
+  height: 800px;
+  background-image: url("../../content/img/online-class.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.top-text {
+  text-align: center;
+  line-height: 10px;
+  margin-top: 150px;
+  margin-right: 600px;
+}
+
+h1 {
+  font-size: 70px;
+  color: #7c03b4;
+}
+
+.underline {
+  border-bottom: 25px solid #e75e02;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+h2 {
+  font-size: 60px;
+  color: #fa0808;
+}
+
+/* ▼ Page Two */
+.pg-2 {
+  height: 700px;
+}
+
+.chara-text {
+  text-align: center;
+}
+
+/* ▼ Page Three */
+.pg-3 {
+  height: 700px;
+}
+
+/* ▼ Page Four */
+.pg-4 {
+  height: 700px;
+}
 
