@@ -186,11 +186,58 @@ h2 {
 
 /* ▼ Page Three */
 .pg-3 {
-  height: 700px;
+  height: 1000px;
 }
+
+.pg3-h1 {
+  text-align: center;
+}
+
+.pg3-left-text {
+  margin-left: 50px;
+}
+
+.pg3-left-h3 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #a151c9;
+}
+
+.pg3-right-text {
+  text-align: right;
+  margin-right: 50px;
+}
+
+.pg3-right-h3 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #a151c9;
+}
+
 
 /* ▼ Page Four */
 .pg-4 {
   height: 700px;
 }
+
+/* ▼ Page Five */
+.pg-5 {
+  height: 700px;
+}
+
+/* ▼ Page Six */
+.pg-6 {
+  height: 900px;
+}
+
+.pg6-h1 {
+  text-align: center;
+}
+
+.pg6-intro {
+  padding-left: 50%;
+}
+
 
