@@ -45,7 +45,7 @@
                     <a href="#pg-6">インストラクター紹介</a>
                 </li>
                 <li>
-                    <a href="" class="lsn-btn">無料体験レッスン</a>
+                    <a href="#pg-7" class="lsn-btn">無料体験レッスン</a>
                 </li>
             </ul>
         </nav>
@@ -74,15 +74,26 @@
 
         <section class="pg-3" id="pg-3">
             <h1 class="pg3-h1">Kenny's Englishが選ばれる理由</h1>
-            <div class="pg3-left-text">
-                <h3 class="pg3-left-h3">ピンポイントでスピーキング、リスニング、発音、発信力などのスキルを磨いていく</h3>
-                <p class="pg3-left-p">ただ外国人のインストラクターと英会話をするだけではなく、<br>以上のスキルを生徒様のご要望に合わせて細かく伝授していくことで、<br>スピーキング、リスニング、発音、発信力などのスキルの向上を図ります。</p>
+            <div class="pg3-up-container">
+            <div class="pg3-up-text">
+                <h3 class="pg3-up-h3">ピンポイントでスピーキング、リスニング、発音、発信力などのスキルを磨いていく</h3>
+                <p class="pg3-up-p">ただ外国人のインストラクターと英会話をするだけではなく、<br>以上のスキルを生徒様のご要望に合わせて細かく伝授していくことで、<br>スピーキング、リスニング、発音、発信力などのスキルの向上を図ります。</p>
+            </div>
+            <div class="pg3-up-img">
+                <img width="500" height="300" src="../content/img/study.jpg">
+            </div>
             </div>
 
-            <div class="pg3-right-text">
-                <h3 class="pg3-right-h3">教えるインストラクターが毎週同じであることで生徒の混乱が少ない</h3>
-                <p>インストラクターが毎週変わると教え方など伝え方が変わり生徒様が混乱するケースが多いのですが、<br>教えるインストラクターが毎週同じであれば混乱するケースが無くなります。</p>
+            <div class="pg3-down-container">
+            <div class="pg3-down-img">
+                <img width="500" height="300" src="../content/img/drive.jpg">
             </div>
+            <div class="pg3-down-text">
+                <h3 class="pg3-down-h3">教えるインストラクターが毎週同じであることで生徒の混乱が少ない</h3>
+                <p class="pg3-down-p">インストラクターが毎週変わると教え方など伝え方が変わり生徒様が混乱するケースが多いのですが、<br>教えるインストラクターが毎週同じであれば混乱するケースが無くなります。</p>
+            </div>
+            </div>
+
         </section>
 
         <section class="pg-4" id="pg-4">
@@ -98,6 +109,10 @@
 
         <section class="pg-6" id="pg-6">
             <h1 class="pg6-h1">インストラクター紹介</h1>
+            <div class="pg6-container">
+            <div class="pg6-img">
+            <img width="375" height="500" src="../content/img/instructor-1.jpg" alt="インストラクター">
+            </div>
             <div class="pg6-intro">
                 <h3>インストラクター　岩井 健心</h3>
                 <p>こんにちは！<br>岩井健心と申します！</p>
@@ -107,6 +122,29 @@
                 <p>そしてここから私は母親の出来事も含め<br>「日本の英語不足を解消したい」という思いが徐々に湧き始め英語を教える事を決意<br>しました。</p>
                 <p>Kenny's Englishでは英語に自信がない方や英語を学びたい！という方のスキルアッ<br>プをお手伝いさせていただき、「英語脳へ改造」を目標に努めさせていただきます！</p>
             </div>
+            </div>
+        </section>
+
+        <section class="pg-7" id="pg-7">
+            <form method="post">
+                <h2 class="pg7-h2">無料体験申し込みフォーム</h2>
+
+                <input type="hidden" name="_to" value="masat4146@gmail.com">
+
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="name" placeholder="例：山田　太郎" required>
+
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" placeholder="例：email@example.com" required>
+
+                <label for="phone">電話番号</label>
+                <input type="tel" id="phone" name="phone" placeholder="012-3456-7890"> 
+
+                <label for="comments">お問い合わせ内容</label>
+                <textarea id="comments" name="comments" placeholder="英語のレベル、英語を学びたい理由をご記入ください" rows="4"></textarea>
+
+                <button class="submit-btn" type="submit">送信する</button>
+            </form>
         </section>
     </main>
 
