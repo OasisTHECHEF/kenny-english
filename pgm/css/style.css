@@ -246,7 +246,26 @@ h2 {
 /* ▼ Page Five */
 .pg-5 {
   height: 700px;
+  background-color: #DCCCEB;
 }
+
+.pg5-h1 {
+  text-align: center;
+}
+
+.pg5-box {
+  width: 1000px;
+  display: block; /* Changed to block for natural stacking of paragraphs */
+  background-color: #fff;
+  color: #56364E;
+  text-align: center;
+  border-radius: 5px;
+  border: double 5px #56364E;
+  margin: auto;
+  padding: 1px; /* Add padding to give some space around the content */
+}
+
+
 
 /* ▼ Page Six */
 .pg-6 {
