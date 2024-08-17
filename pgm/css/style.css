@@ -168,7 +168,7 @@ h1 {
   padding: 50px;
 }
 
-h2 {
+.pg1-h2 {
   font-size: 60px;
   color: #fa0808;
 }
@@ -240,8 +240,30 @@ h2 {
 
 /* ▼ Page Four */
 .pg-4 {
-  height: 700px;
+  height: 900px;
 }
+
+.pg4-h1 {
+  text-align: center;
+}
+
+.pg4-top-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.pg4-top-sub {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #DCCCEB;
+}
+
+
 
 /* ▼ Page Five */
 .pg-5 {
@@ -251,6 +273,11 @@ h2 {
 
 .pg5-h1 {
   text-align: center;
+}
+
+.pg5-h2 {
+  font-size: 60px;
+  color: #56364E;
 }
 
 .pg5-box {
@@ -265,6 +292,52 @@ h2 {
   padding: 1px; /* Add padding to give some space around the content */
 }
 
+.pg5-top-box {
+  line-height: 1px;
+}
+
+.pg5-mid-box {
+  display: block;
+  width: 900px;
+  border-bottom: 2px solid #56364E;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.pg5-bottom-box {
+  width: 950px;
+  margin: auto;
+  padding: 20px;
+}
+
+.pg5-bottom-box ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.pg5-bottom-box li {
+  position: relative;
+  font-size: 20px;
+}
+
+.pg5-bottom-box li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: .5em;
+  left: -1.5em;
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid #56364E;
+  border-bottom: 2px solid #56364E;
+  transform: rotate(-45deg);
+}
+
+.pg5-top-list {
+  border-bottom: 20px;
+}
 
 
 /* ▼ Page Six */
