@@ -179,54 +179,67 @@ section {
   letter-spacing: 10px;
 }
 
-.pg-1-1 {
-  height: 500px;
-  background-color: #a9a9a9;
+.pg1-2 {
+  height: 600px;
 }
 
-.pg1-1-1-h1 {
+.pg1-2-h1 {
   text-align: center;
-  color: #755B41;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.pg1-bottom-list ul {
-  width: fit-content;
-  margin: auto;
-}
-
-.pg1-bottom-list li+li {
-  margin-top: 5px;
-}
-
-.pg1-bottom-list li {
-  position: relative;
-  padding-left: 25px;
   font-size: 30px;
-  line-height: 60px;
+  color: #E0780E;
 }
 
-.pg-1-2 {
+.pg1-2text {
+  text-align: center;
+}
+
+.pg1-2loop-wrap {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 50px;
+  background: #fff000;
+}
+.pg1-2loop-area {
+  display: flex;
+  animation: loop-slide 20s infinite linear 1s both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pg1-2loop-area .content {
+  width: 500px;
+}
+@keyframes loop-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* ▼ Page Two */
+.pg-2 {
   height: 1000px;
 }
 
-.pg1-subtext {
+.pg2-subtext {
   text-align: center;
 }
 
-.pg1-points {
+.pg2-points {
   text-align: center;
 }
 
-.pg1-bottom-box {
+.pg2-bottom-box {
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 10px;
 }
 
-.pg1-bottom-sub {
+.pg2-bottom-sub {
   flex: 1;
   height: 400px;
   text-align: center;
@@ -236,28 +249,13 @@ section {
   border: double 5px #E0780E;
 }
 
-.pg1-box-p1 {
+.pg2-box-p1 {
   width: 40%;
   text-align: center;
   margin: 0;
   padding: 0;
   color: #fff;
   background-color: #E0780E;
-}
-
-/* ▼ Page Two */
-.pg-2 {
-  height: 700px;
-}
-
-.pg2-h1 {
-  text-align: center;
-  font-size: 30px;
-  color: #E0780E;
-}
-
-.chara-text {
-  text-align: center;
 }
 
 /* ▼ Page Three */
