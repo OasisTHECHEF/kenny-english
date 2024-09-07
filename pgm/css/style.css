@@ -193,30 +193,26 @@ section {
   text-align: center;
 }
 
-.pg1-2loop-wrap {
-  display: flex;
-  align-items: center;
+.pg1-2loop {
+  margin: 0 auto 40px;
+  width: 100%;
+  font-size: 28px;
+  text-align: center;
   overflow: hidden;
-  height: 50px;
-  background: #fff000;
 }
-.pg1-2loop-area {
-  display: flex;
-  animation: loop-slide 20s infinite linear 1s both;
-  list-style: none;
+
+.pg1-2loop p {
   margin: 0;
-  padding: 0;
+  display: inline-block;
+  padding-left: 100%;
+  white-space:  nowrap;
+  line-height: 1em;
+  animation: scrollSample01 20s linear infinite;
 }
-.pg1-2loop-area .content {
-  width: 500px;
-}
-@keyframes loop-slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+
+@keyframes scrollSample01 {
+  0% { transform: translateX(0);}
+  100% { transform: translateX(-100%);}
 }
 
 /* ▼ Page Two */
