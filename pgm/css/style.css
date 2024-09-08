@@ -194,26 +194,41 @@ section {
 }
 
 .pg1-2loop {
-  margin: 0 auto 40px;
-  width: 100%;
-  font-size: 28px;
-  text-align: center;
-  overflow: hidden;
-}
-
-.pg1-2loop p {
-  margin: 0;
-  display: inline-block;
+  margin : 0 auto 40px;
+  width : 100%;
+  font-size : 40px;
+  text-align : center;
+  overflow : hidden;
+  }
+  .pg1-2loop ul {
+  margin:0;
+  display : inline-block;
   padding-left: 100%;
-  white-space:  nowrap;
-  line-height: 1em;
-  animation: scrollSample01 20s linear infinite;
-}
-
-@keyframes scrollSample01 {
-  0% { transform: translateX(0);}
-  100% { transform: translateX(-100%);}
-}
+  white-space : nowrap;
+  line-height : 1em;
+  animation : scrollpg1-2loop 15s linear infinite;
+  }
+  .pg1-2loop ul li {
+  display:inline;
+  margin:0 100px 0 0;
+  }
+  .spg1-2loop ul li:nth-child(1) {
+  font-weight:bold;
+  }
+  .pg1-2loop ul li:nth-child(2) {
+  color:#F00;
+  }
+  .spg1-2loop ul li:nth-child(3) {
+  font-style:italic;
+  }
+  .pg1-2loop ul li:last-child {
+  color:#F90;
+  margin:0;
+  }
+  @keyframes scrollpg1-2loop {
+  0% { transform: translateX(0)}
+  100% { transform: translateX(-100%)}
+  }
 
 /* ▼ Page Two */
 .pg-2 {
@@ -523,7 +538,7 @@ form {
 
 .pg7-h2 {
   text-align: center;
-  color: #ff6363;
+  color: #ff6363; 
   margin-bottom: 20px;
 }
 
