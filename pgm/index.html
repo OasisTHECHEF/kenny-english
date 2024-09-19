@@ -4,14 +4,22 @@
     <!-- ▼ Page Setting ▼ -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Kenny's English</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script>
+    $(function() {
+       const hum = $('#nav-ham, .nav_close')
+       const nav = $('.sp-nav')
+       hum.on('click', function(){
+          nav.toggleClass('toggle');
+       });
+    });
+    </script>
 </head>
 
 <body>
@@ -19,36 +27,35 @@
 <div class="top-area">
     <header class="DownMove" id="header">
         <div class="logo" id="logo">
-            <h1 class="hd-h1">
-                <a href="#pg-1" class="home-logo">オンライン英会話<br>Kenny's English</a>
-            </h1>
+            <a href="#pg-1"><img src="../content/img/logo.png" width="150" height="85" alt="kennys_english"></a>
         </div>
 
-        <nav class="hd-nav">
-            <ul id="mv-navi">
-                <li>
-                    <a href="#pg-1">トップ</a>
-                </li>
-                <li>
-                    <a href="#pg-2">3つの特徴</a>
-                </li>
-                <li>
-                    <a href="#pg-3">選ばれる理由</a>
-                </li>
-                <li>
-                    <a href="#pg-4">レッスン内容</a>
-                </li>
-                <li>
-                    <a href="#pg-5">料金</a>
-                </li>
-                <li>
-                    <a href="#pg-6">インストラクター紹介</a>
-                </li>
-                <li>
-                    <a href="../pgm/free_lesson.html" class="lsn-btn">無料体験レッスン</a>
-                </li>
+        <nav class="pc-nav">
+            <ul>
+                <li><a href="#pg-1">トップ</a></li>
+                <li><a href="#pg-2">3つの特徴</a></li>
+                <li><a href="#pg-3">選ばれる理由</a></li>
+                <li><a href="#pg-4">レッスン内容</a></li>
+                <li><a href="#pg-5">料金</a></li>
+                <li><a href="#pg-6">インストラクター紹介</a></li>
+                <li><a href="../pgm/free_lesson.html" class="lsn-btn">無料体験レッスン</a></li>
             </ul>
         </nav>
+        <nav class="sp-nav">
+            <ul>
+                <li><a href="#pg-1">トップ</a></li>
+                <li><a href="#pg-2">3つの特徴</a></li>
+                <li><a href="#pg-3">選ばれる理由</a></li>
+                <li><a href="#pg-4">レッスン内容</a></li>
+                <li><a href="#pg-5">料金</a></li>
+                <li><a href="#pg-6">インストラクター紹介</a></li>
+                <li><a href="../pgm/free_lesson.html" class="lsn-btn">無料体験レッスン</a></li>
+                <li class="nav_close"><span>閉じる</span></li>
+            </ul>
+        </nav>
+        <div id="nav-ham">
+            <span></span>
+        </div>
 
     </header>
 </div>
@@ -64,6 +71,7 @@
         </section>
 
         <section class="pg1-2" id="pg1-2">
+            <!-- 
             <div class="pg1-2loop">
                 <ul>
                     <li>Kenny's English</li>
@@ -74,11 +82,15 @@
                     <li>Kenny's English</li>
                 </ul>
             </div>
+            -->
+            <div class="int_des" id="int_des">
+                <h1 class="bee" style="margin-top: 0px; margin-bottom:0px;"></h1>
+            </div>
             <div class="pg1-2text">
                 <h1 class="pg1-2-h1">「英語で自分に自信をつけよう」</h1>
                 <p>職場で英会話を使う機会があるが上手く伝えられない、海外の人と話す勇気が欲しい</p>
                 <p>英語を通して自分の目標を成し遂げたい、世界で通用する人材になりたい</p>
-                <p>Kenny's Englishでは「英語脳へ改造」をモットーに、あなたの願いや想いをサポートさせていただくのがKenny's English</p>
+                <p>「英語脳へ改造」をモットーに、あなたの願いや想いをサポートするのがKenny's English</p>
             </div>
         </section>
     
@@ -119,23 +131,21 @@
             <h1 class="pg3-h1"><span style="color: #E0780E;">Kenny's English</span>が選ばれる理由</h1>
             <div class="pg3-up-container">
                 <div class="pg3-up-sub">
-                    <h3 class="pg3-up-h3">ピンポイントでスピーキング、リスニング、</h3><br>
-                    <h3 class="pg3-up-h3">発音、発信力などのスキルを磨いていく</h3>
-                    <p class="pg3-up-p">ただ外国人のインストラクターと英会話をするだけではなく、<br>以上のスキルを生徒様のご要望に合わせて細かく伝授していくことで、<br>スピーキング、リスニング、発音、発信力などのスキルの向上を図ります。</p>
+                    <h3 class="pg3-up-h3">ピンポイントでスピーキング、リスニング、発音、発信力などのスキルを磨いていく</h3><br>
+                    <p class="pg3-up-p">ただ外国人のインストラクターと英会話をするだけではなく、以上のスキルを生徒様のご要望に合わせて<br>細かく伝授していくことで、スピーキング、リスニング、発音、発信力などのスキルの向上を図ります。</p>
                 </div>
                 <div class="pg3-up-sub">
-                    <img width="400" height="300" src="../content/img/seiji.png">
+                    <img width="450" height="300" src="../content/img/seiji.png">
                 </div>
             </div>
 
             <div class="pg3-down-container">
             <div class="pg3-down-sub">
-                <img width="400" height="300" src="../content/img/ki.jpg">
+                <img width="450" height="300" src="../content/img/ki.jpg">
             </div>
             <div class="pg3-down-sub">
-                <h3 class="pg3-down-h3">教えるインストラクターが毎週同じである</h3><br>
-                <h3 class="pg3-down-h3">ことで生徒の混乱が少ない</h3>
-                <p class="pg3-down-p">インストラクターが毎週変わると教え方など伝え方が変わり生<br>徒様が混乱するケースが多いのですが、教えるインストラクタ<br>ーが毎週同じであれば混乱するケースが無くなります。</p>
+                <h3 class="pg3-down-h3">教えるインストラクターが毎週同じであることで生徒の混乱が少ない</h3><br>
+                <p class="pg3-down-p">インストラクターが毎週変わると教え方など伝え方が変わり生徒様が混乱するケースが多いのですが、<br>教えるインストラクターが毎週同じであれば混乱するケースが無くなります。</p>
             </div>
             </div>
 
@@ -192,26 +202,14 @@
                 </div>
                 <div class="pg5-bottom-box">
                     <ul class="pg5-top-list">
-                        <li>
-                            完全な英語脳に改造
-                        </li>
-                        <li>
-                            ネイティブ並みの発音
-                        </li>
-                        <li>
-                            スラスラと出る英語
-                        </li>
+                        <li>完全な英語脳に改造</li>
+                        <li>ネイティブ並みの発音</li>
+                        <li>スラスラと出る英語</li>
                     </ul>
                     <ul class="pg5-bottom-list">
-                        <li>
-                            ピンポイントスキル向上
-                        </li>
-                        <li>
-                            インストラクターが同じ
-                        </li>
-                        <li>
-                            無料体験あり
-                        </li>
+                        <li>ピンポイントスキル向上</li>
+                        <li>インストラクターが同じ</li>
+                        <li>無料体験レッスン有</li>
                     </ul>
                 </div>
             </div>
@@ -263,11 +261,11 @@
     <footer class="footer">
         <div class="md-flex md-justify-between">
             <h1 class="ft-h1">
-                <a href="#pg-1" class="ft-logo">オンライン英会話<br>Kenny's English</a>
+                <a href="#pg-1"><img src="../content/img/logo.png" width="150" height="90" alt="kennys_english"></a>
             </h1>
             <div class="grid">
               <div>
-                <ul class="footer__navi">
+                <ul class="footer_navi">
                     <li><a href="#pg-1">トップ</a></li>
                     <li><a href="#pg-2">3つの特徴</a></li>
                     <li><a href="#pg-3">選ばれる理由</a></li>
@@ -282,7 +280,7 @@
           <div class="md-flex md-justify-between">
             <p class="copyright">© 2024 Kenshin Iwai All Rights Reserved.
             </p>
-            <div class="footer__social">
+            <div class="footer_social">
               <a href="#">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
