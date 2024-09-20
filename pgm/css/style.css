@@ -316,7 +316,7 @@ h1.bee::after {
 
 .pg3-down-h3 {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 1px;
   padding: 10px;
   background-color: #E0780E;
   margin-bottom: 5px;
@@ -338,11 +338,6 @@ h1.bee::after {
   color: #E0780E;
 }
 
-.pg-4 .pg4-top-box, 
-.pg-4 .pg4-bottom-box {
-    margin-bottom: 0; /* Ensure there's no extra margin between the boxes */
-}
-
 .pg4-top-box {
   width: 100%;
   display: flex;
@@ -352,8 +347,8 @@ h1.bee::after {
 .pg4-top-sub {
   flex: 1;
   text-align: center;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin: 5px;
   border-radius: 5px;
   background-color: #E0780E;
 }
@@ -366,10 +361,10 @@ h1.bee::after {
 
 .pg4-bottom-sub {
   flex: 1;
-  height: 400px;
+  height: 450px;
   text-align: center;
   padding: 10px;
-  margin: 10px;
+  margin: 0 10px;
   border-radius: 5px;
   background-color: #fff;
   border: double 5px #E0780E;
@@ -459,6 +454,8 @@ h1.bee::after {
 .pg5-top-list {
   border-bottom: 20px;
 }
+
+
 
 
 /* ▼ Page Six */
@@ -977,11 +974,20 @@ main {
 
 .pg5-bottom-box {
   width: 90%;
+  margin-top: 20px;
+  padding: 0; /* Adjust padding to remove extra space */
 }
 
 .pg5-bottom-box ul {
   display: flex;
   flex-direction: column;
+  margin-top: 0; /* Ensure there's no space between the lists */
+  padding-top: 0;
+}
+
+.pg5-bottom-box .pg5-top-list {
+  margin-bottom: 0; /* Remove bottom margin or padding if present */
+  padding-bottom: 0;
 }
 
 .pg5-bottom-box li {
@@ -1005,6 +1011,10 @@ main {
 .free-lesson {
   height: 500px;
   background-color: #E0780E;
+}
+
+.pc-nav {
+  display: none;
 }
 
 .pgFL-h2 {
