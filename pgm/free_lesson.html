@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- ▼ Page Setting ▼ -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Kenny's English</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script>
+    $(function() {
+       const hum = $('#nav-ham, .nav_close')
+       const nav = $('.sp-nav')
+       hum.on('click', function(){
+          nav.toggleClass('toggle');
+       });
+    });
+    </script>
 </head>
 
 <body>
 <!-- Header -->
 <div class="top-area">
-    <header class="DownMove" id="header">
-        <div class="logo" id="logo">
-            <h1 class="hd-h1">
-                <a href="../pgm/index.html#pg-1"><img src="../content/img/logo.png" width="150" height="90" alt="kennys_english"></a>
-            </h1>
-        </div>
+  <header class="DownMove" id="header">
+      <div class="logo" id="logo">
+          <a href="../pgm/index.html#pg-1"><img src="../content/img/logo2.png" width="110" height="85" alt="kennys_english"></a>
+      </div>
 
-        <nav class="hd-nav">
-            <ul id="mv-navi">
-                <li><a href="../pgm/index.html#pg-1">トップ</a></li>
-                <li><a href="../pgm/index.html#pg-2">3つの特徴</a></li>
-                <li><a href="../pgm/index.html#pg-3">選ばれる理由</a></li>
-                <li><a href="../pgm/index.html#pg-4">レッスン内容</a></li>
-                <li><a href="../pgm/index.html#pg-5">料金</a></li>
-                <li><a href="../pgm/index.html#pg-6">インストラクター紹介</a></li>
-                <li><a href="#pg-7" class="lsn-btn">無料体験レッスン</a></li>
-            </ul>
-        </nav>
+      <nav class="pc-nav">
+          <ul>
+              <li><a href="../pgm/index.html#pg-1">トップ</a></li>
+              <li><a href="../pgm/index.html#pg-2">3つの特徴</a></li>
+              <li><a href="../pgm/index.html#pg-3">選ばれる理由</a></li>
+              <li><a href="../pgm/index.html#pg-4">レッスン内容</a></li>
+              <li><a href="../pgm/index.html#pg-5">料金</a></li>
+              <li><a href="../pgm/index.html#pg-6">インストラクター紹介</a></li>
+              <li><a href="#pg7" class="lsn-btn">無料体験レッスン</a></li>
+          </ul>
+      </nav>
+      <nav class="sp-nav">
+          <ul>
+            <li><a href="../pgm/index.html#pg-1">トップ</a></li>
+            <li><a href="../pgm/index.html#pg-2">3つの特徴</a></li>
+            <li><a href="../pgm/index.html#pg-3">選ばれる理由</a></li>
+            <li><a href="../pgm/index.html#pg-4">レッスン内容</a></li>
+            <li><a href="../pgm/index.html#pg-5">料金</a></li>
+            <li><a href="../pgm/index.html#pg-6">インストラクター紹介</a></li>
+            <li><a href="#pg7" class="lsn-btn">無料体験レッスン</a></li>
+              <li class="nav_close"><span>閉じる</span></li>
+          </ul>
+      </nav>
+      <div id="nav-ham">
+          <span></span>
+      </div>
 
-    </header>
+  </header>
 </div>
 
     <main>
@@ -45,22 +66,22 @@
 
           <div class="pg7-bottom-box">
             <div class="pg7-bottom-sub">
-                <p class="pg7-box-p1"><span style="font-size: 40px;">Step01</span></p>
+                <p class="pg7-box-p1">Step01</p>
                 <img src="../content/img/step01.png">
-                <p><span style="font-size: 25px; color: #56364E;">予約した日時にカウンセリング</span></p>
-                <p>英語を習いたい理由、そして苦手な部分を把握し課題を見つけていきます</p>
+                <p class="pg7-box-text">予約した日時にカウンセリング</p>
+                <!-- <p>英語を習いたい理由、そして苦手な部分を把握し課題を見つけていきます</p> --> 
             </div>
             <div class="pg7-bottom-sub">
-                <p class="pg7-box-p1"><span style="font-size: 40px;">Step02</span></p>
+                <p class="pg7-box-p1">Step02</p>
                 <img src="../content/img/step02.png">
-                <p><span style="font-size: 25px; color: #56364E;">体験レッスン+英語力チェック</span></p>
-                <p>課題に取り組みながらKenny’s Englishで行うレッスンを実践していただきます</p>
+                <p class="pg7-box-text">体験レッスン+英語力チェック</p>
+                <!-- <p>課題に取り組みながらKenny’s Englishで行うレッスンを実践していただきます</p> --> 
             </div>
             <div class="pg7-bottom-sub">
-                <p class="pg7-box-p1"><span style="font-size: 40px;">Step03</span></p>
+                <p class="pg7-box-p1">Step03</p>
                 <img src="../content/img/step03.png">
-                <p><span style="font-size: 25px; color: #56364E;">インストラクターと学習相談</span></p>
-                <p>レッスン終了後今後のレッスンの組み方、金額、今後のレッスンお取り組み方についてご案内させていただきます</p>
+                <p class="pg7-box-text">インストラクターと学習相談</span></p>
+                <!-- <p>レッスン終了後今後のレッスンの組み方、金額、今後のレッスンお取り組み方についてご案内させていただきます</p> --> 
             </div>
         </div>
             <form class="pg7-form" method="post">
@@ -95,7 +116,7 @@
     <footer class="footer">
         <div class="md-flex md-justify-between">
             <h1 class="ft-h1">
-                <a href="../pgm/index.html#pg-1"><img src="../content/img/logo.png" width="150" height="90" alt="kennys_english"></a>
+                <a href="../pgm/index.html#pg-1"><img src="../content/img/logo2.png" width="110" height="90" alt="kennys_english"></a>
             </h1>
             <div class="grid">
               <div>

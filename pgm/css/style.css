@@ -233,7 +233,7 @@ h1.bee::after {
 
 /* ▼ Page Two */
 .pg-2 {
-  height: 1000px;
+  height: 900px;
 }
 
 .pg2-subtext {
@@ -294,6 +294,7 @@ h1.bee::after {
 
 .pg3-up-h3 {
   display: inline-block;
+  font-size: 25px;
   margin-top: 1px;
   padding: 10px;
   background-color: #E0780E;
@@ -316,6 +317,7 @@ h1.bee::after {
 
 .pg3-down-h3 {
   display: inline-block;
+  font-size: 25px;
   margin-top: 1px;
   padding: 10px;
   background-color: #E0780E;
@@ -532,6 +534,9 @@ h1.bee::after {
 
 
 /* ▼ Page Seven */
+.pg-7 {
+  height: 1300px;
+}
 
 .pg7-bottom-box {
   width: 100%;
@@ -543,7 +548,7 @@ h1.bee::after {
 
 .pg7-bottom-sub {
   flex: 1;
-  height: 320px;
+  height: 330px;
   text-align: center;
   margin: 10px;
   border-radius: 5px;
@@ -551,18 +556,19 @@ h1.bee::after {
   border: double 5px #E0780E;
 }
 
+.pg7-box-text {
+  font-size: 22px;
+  color: #E0780E;
+}
+
 .pg7-box-p1 {
   width: 40%;
+  font-size: 40px;
   text-align: center;
   margin: 0;
   padding: 0;
   color: #fff;
   background-color: #E0780E;
-}
-
-
-.pg-7 {
-  height: 1300px;
 }
 
 .pg7-h1 {
@@ -579,7 +585,6 @@ h1.bee::after {
   width: 100%;
   margin: auto;
 }
-
 
 .pg7-h2 {
   text-align: center;
@@ -646,7 +651,6 @@ hr {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -906,6 +910,10 @@ main {
     letter-spacing: 5px;
   }
 
+  .pg1-2 {
+    height: 350px;
+  }
+
   .pg1-2-h1 {
     text-align: center;
     font-size: 25px;
@@ -947,6 +955,46 @@ main {
   color: #fff;
   background-color: #E0780E;
 }
+
+
+.pg-3 {
+  height: 750px;
+  background-color: #755B41;
+}
+
+.pg3-h1 {
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+}
+
+.pg3-up-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 0;
+}
+
+.pg3-up-sub img {
+  /*width: 100%;*/ /* Ensure the image takes up the full width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 0;
+}
+
+.pg3-up-h3 {
+  font-size: 20px;
+}
+
+.pg3-down-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pg3-down-h3 {
+  font-size: 20px;
+}
+
 
 .pg5-h2 {
   font-size: 50px;
@@ -1008,6 +1056,45 @@ main {
   transform: rotate(-45deg);
 }
 
+
+.pg-6 {
+  padding: 20px 10px; /* Reduce padding */
+}
+
+.pg6-h1 {
+  font-size: 24px; /* Smaller heading size */
+  text-align: center;
+}
+
+.pg6-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center content */
+}
+
+.pg6-img, .pg6-intro {
+  width: 100%; /* Full width for both image and text */
+  margin: 10px 0; /* Add some spacing between items */
+  text-align: center; /* Center-align text */
+}
+
+.pg6-img img {
+  width: 220px;
+  height: 240px;
+  border-radius: 50%;
+}
+
+.pg6-intro br {
+  display: none;
+}
+
+.pg6-intro p {
+  text-align: left;
+  font-size: 14px; /* Adjust text size for readability */
+  margin: 10px 0; /* Add space between paragraphs */
+}
+
+
 .free-lesson {
   height: 500px;
   background-color: #E0780E;
@@ -1018,18 +1105,16 @@ main {
 }
 
 .pgFL-h2 {
-  font-size: 17px;
+  font-size: 25px;
   color: #E0780E;
-}
-
-.pgFL-top-box p {
-  font-size: 15px;
+  margin-top: 0;
 }
 
 .pgFL-box {
-  height: 300px;
+  height: 400px;
   width: 100%;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
   background-color: #fff;
@@ -1038,26 +1123,108 @@ main {
   border-radius: 30px;
   border: single 5px #E0780E;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 20px;
   padding: 1px; /* Add padding to give some space around the content */
 }
 
 .pgFL-top-box {
-  width: 50%;
-  margin-top: 20px;
+  order: 2;
+  width: 100%;
+  margin-top: 0;
+}
+
+.pgFL-top-box p {
+  font-size: 13px;
 }
 
 
 .pgFL-bottom-box {
-  width: 45%;
-  margin-top: 90px;
+  order: 1;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 15px;
 }
 
 .pgFL-bottom-box p {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
 }
 
+
+.pg-7 {
+  height: 1000px;
+}
+
+.pg7-h1 {
+  font-size: 30px;
+}
+
+.pg7-bottom-sub img {
+  width: 55px;
+}
+
+.pg7-bottom-sub {
+  flex: 1;
+  height: 180px;
+  text-align: center;
+  margin: 7px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: double 5px #E0780E;
+}
+
+.pg7-bottom-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.pg7-box-text {
+  font-size: 16px;
+}
+
+.pg7-box-p1 {
+  width: 55%;
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #E0780E;
+}
+
+
+/*
+.pg7-h1 {
+  font-size: 35px;
+}
+
+.pg7-bottom-box {
+width: 100%;
+flex-direction: column;
+padding: 10px;
+}
+
+.pg7-bottom-sub {
+height: 400px;
+text-align: center;
+margin: 10px;
+border-radius: 5px;
+background-color: #fff;
+border: double 5px #E0780E;
+}
+
+.pg7-box-p1 {
+width: 40%;
+text-align: center;
+margin: 0;
+padding: 0;
+color: #fff;
+background-color: #E0780E;
+}
+*/
 
 
   .pg-1, .pg-2, .pg-3, .pg-4, .pg-5, .pg-6 {
@@ -1078,6 +1245,9 @@ main {
   .pg4-bottom-box {
     flex-direction: column;
   }
+
+
+
 }
 
 /* Responsive for Tablets (601px to 900px) */
