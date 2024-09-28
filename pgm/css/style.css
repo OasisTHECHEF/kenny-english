@@ -40,6 +40,7 @@
   background-color: transparent;
   display: flex;
   align-items: center;
+  backdrop-filter: blur(10px);
 }
 
 /* Header Up & Down Movement */
@@ -133,10 +134,22 @@ section {
 
 /* ▼ Page One */
 .pg-1 {
-  height: 800px;
+  height: 600px;
   background-image: url("../../content/img/widesite.jpg");
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+
+.pg-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 1;
 }
 
 .pg1-top-text {
@@ -144,6 +157,8 @@ section {
   line-height: 20px;
   margin-top: 50px;
   margin-right: 300px;
+  position: relative;
+  z-index: 2;
 }
 
 .pg1-h1 {
@@ -259,6 +274,12 @@ h1.bee::after {
   border-radius: 5px;
   background-color: #fff;
   border: double 5px #E0780E;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s ease;
+}
+
+.pg2-bottom-sub:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .pg2-box-p1 {
@@ -661,13 +682,6 @@ hr {
   background: #fff;
 }
 
-.footer {
-  padding: 2rem;
-  font-size: 15px;
-  color: #4b5564;
-  background: #fff;
-}
-
 .footer_navi {
   display: block;
 }
@@ -766,12 +780,15 @@ main {
   width: 40%;
 }
 
-/* Responsive for Smartphones (max-width: 600px) */
+/*   Responsive Design Section    */
+/* Smartphones (max-width: 600px) */
+
 @media screen and (max-width: 600px) {
 
-  .logo {
-    width: 90px;
-    height: 90px;
+/* Logo and Header design */
+  .logo img {
+    width: 80px;
+    height: 80px;
   }
 
   .pc-nav {
@@ -890,24 +907,45 @@ main {
   opacity: 1;
 }
 
-  #header {
-    height: 80px;
-    padding: 10px;
-    justify-content: center;
-  }
+#header {
+  height: 80px;
+  padding: 10px;
+  justify-content: center;
+}
 
-  .hd-h1 {
-    font-size: 16px;
+.hd-h1 {
+  font-size: 16px;
+}
+
+/* Page1 Design for SP */
+.pg-1 {
+    height: 350px;
+    background-image: url("../../content/img/widesite.jpg");
+    background-position: center;
+    background-size: cover;
   }
 
   .pg1-top-text {
+    text-align: center;
+    margin-top: 10px;
     margin-right: 0;
-    padding: 0 10px;
+  }
+  
+  .pg1-h1 {
+    font-size: 45px;
+    color: #fff;
+
+  }
+  
+  .pg1-h2 {
+    font-size: 10px;
+    color: #fff;
   }
 
   .pg1-h1, .pg1-h2 {
-    font-size: 24px;
-    letter-spacing: 5px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-right: 105px;
   }
 
   .pg1-2 {
@@ -924,6 +962,7 @@ main {
     font-size: 10px;
   }
 
+/* Page2 Design for SP */
  .pg2-subtext h2 {
     font-size: 22px;
  }
@@ -956,7 +995,7 @@ main {
   background-color: #E0780E;
 }
 
-
+/* Page3 Design for SP */
 .pg-3 {
   height: 750px;
   background-color: #755B41;
@@ -995,7 +1034,7 @@ main {
   font-size: 20px;
 }
 
-
+/* Page5 Design for SP */
 .pg5-h2 {
   font-size: 50px;
 }
@@ -1056,7 +1095,7 @@ main {
   transform: rotate(-45deg);
 }
 
-
+/* Page6 Design for SP */
 .pg-6 {
   padding: 20px 10px; /* Reduce padding */
 }
@@ -1094,7 +1133,7 @@ main {
   margin: 10px 0; /* Add space between paragraphs */
 }
 
-
+/* Free Lesson Page Design for SP */
 .free-lesson {
   height: 500px;
   background-color: #E0780E;
@@ -1150,7 +1189,7 @@ main {
   font-weight: bold;
 }
 
-
+/* Page7 Design for SP */
 .pg-7 {
   height: 1000px;
 }
@@ -1227,7 +1266,7 @@ background-color: #E0780E;
 */
 
 
-  .pg-1, .pg-2, .pg-3, .pg-4, .pg-5, .pg-6 {
+  .pg-2, .pg-3, .pg-4, .pg-5, .pg-6 {
     height: auto;
     padding: 20px 10px;
   }
