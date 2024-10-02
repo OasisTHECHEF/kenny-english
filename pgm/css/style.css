@@ -100,7 +100,31 @@ nav ul li a:active{
   color: #fff;
   padding: 15px 25px;
   border-radius: 6px;
+  animation: bounceInButton 1.5s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
  }
+
+ .lsn-btn:hover {
+  transform: scale(1.1); /* Scale up the button on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow for emphasis */
+}
+
+@keyframes bounceInButton {
+  0% {
+      transform: scale(0.3);
+      opacity: 0;
+  }
+  50% {
+      transform: scale(1.05);
+      opacity: 1;
+  }
+  70% {
+      transform: scale(0.9);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
 
 nav {
    margin: 0 0 0 auto;
@@ -349,6 +373,60 @@ h1.bee::after {
   margin-top: 5px; /* Reduce the top margin */
 }
 
+.fade-in {
+  animation: fadeInAnimation 1.5s ease-in-out forwards;
+}
+
+.slide-in {
+  animation: slideInAnimation 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideInAnimation {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.pg3-up-sub img, .pg3-down-sub img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pg3-up-sub img:hover, .pg3-down-sub img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background: linear-gradient(45deg, #755B41, #E0780E);
+  }
+  50% {
+      background: linear-gradient(45deg, #E0780E, #755B41);
+  }
+  100% {
+      background: linear-gradient(45deg, #755B41, #E0780E);
+  }
+}
+
+.pg-3 {
+  animation: gradientAnimation 3s infinite;
+}
+
+
 
 /* ▼ Page Four */
 .pg-4 {
@@ -384,13 +462,21 @@ h1.bee::after {
 
 .pg4-bottom-sub {
   flex: 1;
-  height: 450px;
+  height: 400px;
   text-align: center;
   padding: 10px;
   margin: 0 10px;
   border-radius: 5px;
   background-color: #fff;
   border: double 5px #E0780E;
+  perspective: 1000px; /* Gives 3D effect */
+  position: relative;
+  transition: box-shadow 0.3s ease-in-out;
+  width: 100%; /* Adjust width as needed */
+}
+
+.pg4-bottom-sub:hover {
+  box-shadow: 0 0 20px 10px rgba(224, 120, 14, 0.5);
 }
 
 .pg4-bottom-sub p {
@@ -401,6 +487,80 @@ h1.bee::after {
   padding-top: 20px;
   text-align: center;
 }
+
+.pg4-card {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.pg4-bottom-sub:hover .pg4-card {
+  transform: rotateY(180deg);
+}
+
+.pg4-card-front, .pg4-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.pg4-card-back {
+  transform: rotateY(180deg);
+  background-color: #E0780E; /* Differentiates the back */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bounce-in {
+  animation: bounceInAnimation 1.5s ease-out;
+}
+
+@keyframes bounceInAnimation {
+  0% {
+      transform: scale(0.3);
+      opacity: 0;
+  }
+  50% {
+      transform: scale(1.05);
+      opacity: 1;
+  }
+  70% {
+      transform: scale(0.9);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.pg4-bottom-sub img {
+  animation: pulseAnimation 2s infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pg4-bottom-sub img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pulseAnimation {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
 
 
 /* ▼ Page Five */
@@ -506,17 +666,113 @@ h1.bee::after {
 .pg6-intro {
   width: 100%;
   margin-right: 80px;
+  position: relative;
+  padding: 20px;
+  border: 3px solid #E0780E;
+  animation: borderPulse 3s infinite alternate;
 }
+
+@keyframes borderPulse {
+  0% {
+      box-shadow: 0 0 10px #E0780E;
+  }
+  100% {
+      box-shadow: 0 0 25px #E0780E;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeftAnimation 1.5s ease-in-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRightAnimation 1.5s ease-in-out forwards;
+}
+
+@keyframes slideInLeftAnimation {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInRightAnimation {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.pg6-img img {
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.pg6-img img:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.floating {
+  animation: floatingAnimation 3s ease-in-out infinite;
+}
+
+@keyframes floatingAnimation {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+
 
 /* ▼ Free Lesson */
 .free-lesson {
   height: 550px;
   background-color: #E0780E;
+  background: linear-gradient(45deg, #E0780E, #FFD600);
+  background-size: 400% 400%;
+  animation: backgroundGradient 5s ease infinite;
+}
+
+@keyframes backgroundGradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
 .pgFL-h2 {
   font-size: 40px;
   color: #E0780E;
+  background: linear-gradient(90deg, #FFD600, #ffc400, #E0780E, #e06c0e, #e0620e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s infinite linear;
+  display: inline-block;
+}
+
+@keyframes gradientMove {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
 }
 
 .pgFL-box {
@@ -532,6 +788,21 @@ h1.bee::after {
   margin: auto;
   margin-top: 70px;
   padding: 1px; /* Add padding to give some space around the content */
+  animation: floatBox 3s ease-in-out infinite;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.pgFL-box:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes floatBox {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
 }
 
 .pgFL-top-box {
@@ -1034,6 +1305,75 @@ main {
   font-size: 20px;
 }
 
+/* Page4 Design for SP */
+    /* Page 4 - General adjustments for mobile */
+    .pg-4 {
+      height: auto;
+      padding: 10px; /* Reduce overall padding */
+    }
+  
+    .pg4-h1 {
+      font-size: 24px; /* Adjust heading size */
+      text-align: center;
+    }
+  
+    /* Flexbox column layout for small screens */
+    .pg4-bottom-box {
+      display: flex;
+      flex-direction: column; /* Stack the boxes vertically */
+      align-items: center;
+      width: 100%; /* Ensure the boxes take full width */
+    }
+  
+    .pg4-bottom-sub {
+      width: 100%; /* Full width for each box */
+      margin-bottom: 20px; /* Add spacing between boxes */
+      padding: 10px;
+      height: auto; /* Adjust the height to content size */
+      border: double 5px #E0780E; /* Ensure border is shown */
+      box-sizing: border-box; /* Include padding and borders in element's total width/height */
+    }
+  
+    /* Inside the card */
+    .pg4-card {
+      width: 100%;
+      height: auto; /* Ensure content height adjusts properly */
+      transform: none; /* Disable 3D transform on small screens */
+    }
+  
+    /* Front and back of card */
+    .pg4-card-front, .pg4-card-back {
+      position: relative;
+      width: 100%;
+      height: auto;
+      backface-visibility: visible; /* Ensure both sides are visible on small screens */
+      padding: 10px;
+    }
+  
+    /* Image adjustments */
+    .pg4-card-front img {
+      width: 80px; /* Resize image for small screens */
+      margin-bottom: 10px;
+    }
+  
+    .pg4-card-back h2, .pg4-card-front h2 {
+      font-size: 18px; /* Adjust font size */
+    }
+  
+    .pg4-card-back p, .pg4-card-front p {
+      font-size: 14px; /* Smaller font for readability */
+    }
+  
+    /* Adjusting the paragraph alignment */
+    .pg4-bottom-sub p {
+      text-align: center; /* Center text for consistency */
+    }
+  
+    h3 {
+      font-size: 16px; /* Adjust sub-heading size for smaller screens */
+    }
+
+
 /* Page5 Design for SP */
 .pg5-h2 {
   font-size: 50px;
@@ -1266,7 +1606,7 @@ background-color: #E0780E;
 */
 
 
-  .pg-2, .pg-3, .pg-4, .pg-5, .pg-6 {
+  .pg-2, .pg-3, .pg-5, .pg-6 {
     height: auto;
     padding: 20px 10px;
   }
@@ -1276,15 +1616,10 @@ background-color: #E0780E;
     margin-bottom: 20px;
   }
 
-  .pg3-up-sub, .pg3-down-sub, .pg4-bottom-sub {
+  .pg3-up-sub, .pg3-down-sub {
     width: 100%;
     margin-bottom: 20px;
   }
-
-  .pg4-bottom-box {
-    flex-direction: column;
-  }
-
 
 
 }
