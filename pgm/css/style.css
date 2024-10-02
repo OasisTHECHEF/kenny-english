@@ -1,0 +1,1333 @@
+@charset "UTF-8";
+
+/*
+*
+* --- Kenny's English
+*
+*  ▼ Theme Color ▼
+*  #E0780E -- Darker
+*  #E0780E -- Lighter
+*  
+*  #E0780E -- Orange
+*  #755B41 -- Brown
+*
+*
+*/
+
+* {
+    box-sizing: border-box;
+ }
+
+ html {
+  color: #000;
+  background: #fff;
+ }
+
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kku";
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f5f5f5;
+ }
+
+
+ #header {
+  padding: 30px 4% 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+/* Header Up & Down Movement */
+#header.Upmove {
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+#header.DownMove {
+  animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ▼ Extra Styling for Header List */
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  color: #666;
+  padding:10px;
+  transition:all 0.3s;
+}
+
+nav ul li.current a,
+nav ul li a:hover,
+nav ul li a:active{
+  color:#E0780E; 
+}
+
+ a {
+   text-decoration: none;
+   color: #696969;
+   /* background: linear-gradient(#FFD600, #FF7A00, #FF0069, #D300C5, #7638FA); */
+ }
+
+ .lsn-btn {
+  background: linear-gradient(#FFD600, #ffc400, #E0780E, #e06c0e, #e0620e);
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 6px;
+ }
+
+nav {
+   margin: 0 0 0 auto;
+}
+
+ ul {
+   list-style: none;
+   margin: 0;
+   display: flex;
+ }
+
+ li {
+   margin: 0 0 0 15px;
+   font-size: 14px;
+ }
+
+ .sp-nav {
+  display: none;
+}
+
+
+/* ▼ Main Page */
+main {
+  padding-top: 70px;
+}
+
+section {
+  padding: 30px;
+}
+
+
+/* ▼ Page One */
+.pg-1 {
+  height: 600px;
+  background-image: url("../../content/img/widesite.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.pg-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 1;
+}
+
+.pg1-top-text {
+  text-align: center;
+  line-height: 20px;
+  margin-top: 50px;
+  margin-right: 300px;
+  position: relative;
+  z-index: 2;
+}
+
+.pg1-h1 {
+  color: #fff;
+  letter-spacing: 10px;
+}
+
+.pg1-h2 {
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 10px;
+}
+
+.pg1-2 {
+  height: 900px;
+}
+
+.pg1-2-h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #E0780E;
+}
+
+.pg1-2text {
+  text-align: center;
+}
+
+.int_des {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3vh;
+  color: #000000;
+  margin-top:0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.int_des > h1{
+  font-size: 2.5vh;
+}
+
+.bee::after {
+    content:'';
+    display: inline-block;
+    margin-left: 2px;
+    background-color: #E0780E;
+    animation-name: blink;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    line-height: 1vh;
+    vertical-align: middle;
+}
+
+h1.bee::after {
+  height:2.6vh;
+  width:1vh;
+  line-height: 2.6vh;
+}
+
+/*
+.pg1-2loop {
+  margin : 0 auto 1px;
+  width : 100%;
+  font-size : 140px;
+  text-align : center;
+  overflow : hidden;
+  }
+  
+  .pg1-2loop ul {
+  margin:0;
+  display : inline-block;
+  padding-left: 100%;
+  white-space : nowrap;
+  line-height : 1em;
+  animation : scrollpg1-2loop 60s linear infinite;
+  }
+  .pg1-2loop ul li {
+  font-size: 150px;
+  color: #FFE1C4;
+  display:inline;
+  margin: 0 100px 0 0;
+  }
+
+  @keyframes scrollpg1-2loop {
+  0% { transform: translateX(0)}
+  100% { transform: translateX(-100%)}
+  }
+*/
+
+/* ▼ Page Two */
+.pg-2 {
+  height: 900px;
+}
+
+.pg2-subtext {
+  text-align: center;
+}
+
+.pg2-points {
+  text-align: center;
+}
+
+.pg2-bottom-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.pg2-bottom-sub {
+  flex: 1;
+  height: 400px;
+  text-align: center;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: double 5px #E0780E;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s ease;
+}
+
+.pg2-bottom-sub:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pg2-box-p1 {
+  width: 40%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #E0780E;
+}
+
+/* ▼ Page Three */
+.pg-3 {
+  height: 1000px;
+  background-color: #755B41;
+}
+
+.pg3-h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.pg3-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pg3-up-sub {
+  margin: 20px;
+}
+
+.pg3-up-h3 {
+  display: inline-block;
+  font-size: 25px;
+  margin-top: 1px;
+  padding: 10px;
+  background-color: #E0780E;
+  margin-bottom: 5px;
+}
+
+.pg3-up-p {
+  margin-top: 5px; /* Reduce the top margin */
+}
+
+.pg3-down-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pg3-down-sub {
+  margin: 20px;
+}
+
+.pg3-down-h3 {
+  display: inline-block;
+  font-size: 25px;
+  margin-top: 1px;
+  padding: 10px;
+  background-color: #E0780E;
+  margin-bottom: 5px;
+}
+
+.pg3-down-p {
+  margin-top: 5px; /* Reduce the top margin */
+}
+
+
+/* ▼ Page Four */
+.pg-4 {
+  height: 1100px;
+}
+
+.pg4-h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #E0780E;
+}
+
+.pg4-top-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pg4-top-sub {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #E0780E;
+}
+
+.pg4-bottom-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pg4-bottom-sub {
+  flex: 1;
+  height: 450px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: double 5px #E0780E;
+}
+
+.pg4-bottom-sub p {
+  text-align: left;
+}
+
+.pg-4 h3 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+
+/* ▼ Page Five */
+.pg-5 {
+  height: 700px;
+  background-color: #E0780E;
+}
+
+.pg5-h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.pg5-h2 {
+  font-size: 60px;
+  color: #E0780E;
+}
+
+.pg5-box {
+  width: 1000px;
+  display: block; /* Changed to block for natural stacking of paragraphs */
+  background-color: #fff;
+  color: #E0780E;
+  text-align: center;
+  border-radius: 5px;
+  border: double 5px #E0780E;
+  margin: auto;
+  padding: 1px; /* Add padding to give some space around the content */
+}
+
+.pg5-top-box {
+  line-height: 1px;
+}
+
+.pg5-mid-box {
+  display: block;
+  width: 900px;
+  border-bottom: 2px solid #E0780E;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.pg5-bottom-box {
+  width: 950px;
+  margin: auto;
+  padding: 20px;
+}
+
+.pg5-bottom-box ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.pg5-bottom-box li {
+  position: relative;
+  font-size: 20px;
+}
+
+.pg5-bottom-box li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: .5em;
+  left: -1.5em;
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid #E0780E;
+  border-bottom: 2px solid #E0780E;
+  transform: rotate(-45deg);
+}
+
+.pg5-top-list {
+  border-bottom: 20px;
+}
+
+
+
+
+/* ▼ Page Six */
+.pg-6 {
+  height: 900px;
+}
+
+.pg6-h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #E0780E;
+}
+
+.pg6-container {
+  display: flex;
+
+}
+
+.pg6-img {
+  width: 100%;
+  text-align: right;
+  margin-right: 100px;
+}
+
+.pg6-intro {
+  width: 100%;
+  margin-right: 80px;
+}
+
+/* ▼ Free Lesson */
+.free-lesson {
+  height: 550px;
+  background-color: #E0780E;
+}
+
+.pgFL-h2 {
+  font-size: 40px;
+  color: #E0780E;
+}
+
+.pgFL-box {
+  height: 350px;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  color: #E0780E;
+  text-align: center;
+  border-radius: 30px;
+  border: single 5px #E0780E;
+  margin: auto;
+  margin-top: 70px;
+  padding: 1px; /* Add padding to give some space around the content */
+}
+
+.pgFL-top-box {
+  width: 50%;
+  margin-top: 30px;
+}
+
+
+.pgFL-bottom-box {
+  width: 45%;
+  margin-top: 90px;
+}
+
+.pgFL-bottom-box p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+
+
+
+/* ▼ Page Seven */
+.pg-7 {
+  height: 1300px;
+}
+
+.pg7-bottom-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.pg7-bottom-sub {
+  flex: 1;
+  height: 330px;
+  text-align: center;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: double 5px #E0780E;
+}
+
+.pg7-box-text {
+  font-size: 22px;
+  color: #E0780E;
+}
+
+.pg7-box-p1 {
+  width: 40%;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #E0780E;
+}
+
+.pg7-h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.pg7-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+
+.pg7-h2 {
+  text-align: center;
+  color: #ff6363; 
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input, select, textarea {
+  max-width: 500px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #ff6363;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 50%;
+  display: inline-block;
+}
+
+.submit-btn:hover {
+  background-color: #ff4747;
+}
+
+
+/* ▼  Footer */
+
+.ft-logo {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin:  0 auto 5%;
+  background: linear-gradient(90deg, #FFD600 0%, #FF7A00 40%, #FF0069 80%, #D300C5, #7638FA);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  padding: 2rem;
+  font-size: 15px;
+  color: #4b5564;
+  background: #fff;
+}
+
+.footer_navi {
+  display: block;
+}
+
+.footer_navi-heading {
+  font-weight: 600;
+}
+
+.footer_logo {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.footer_navi li {
+  margin-bottom: 0.75rem;
+}
+
+.footer_social a {
+  display: inline-block;
+  width: 24px;
+  opacity: 0.7;
+}
+
+.footer_social a:not(:last-child) {
+  margin-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .md-flex {
+    display: flex;
+  }
+
+  .md-justify-between {
+    justify-content: space-between;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Responsive */
+
+/* General Reset */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #000;
+  background: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Default for PCs (min-width: 901px) */
+#header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  color: #fff;
+  padding: 20px;
+}
+
+main {
+  padding-top: 70px;
+}
+
+.pg-1 {
+  height: 800px;
+  background-size: cover;
+}
+
+.pg1-top-text {
+  text-align: center;
+  margin-top: 50px;
+  margin-right: 300px;
+}
+
+.pg1-h1, .pg1-h2 {
+  color: #fff;
+  letter-spacing: 10px;
+}
+
+.pg2-bottom-sub {
+  width: 40%;
+}
+
+/*   Responsive Design Section    */
+/* Smartphones (max-width: 600px) */
+
+@media screen and (max-width: 600px) {
+
+/* Logo and Header design */
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .pc-nav {
+    display: none;
+  }
+
+ .sp-nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  width: 100%;
+  background: rgba(0, 0, 0, .8);
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all .2s ease-in-out;
+ }
+
+  #nav-ham {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 25px;
+    margin: 0 0 0 auto;
+  }
+
+  #nav-ham span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #E0780E;
+    transform: translateY(-50%);
+  }
+
+  #nav-ham::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #E0780E;
+  }
+
+  #nav-ham::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #E0780E;
+  }
+
+  .sp-nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .sp-nav li {
+    margin: 0;
+    padding: 0;
+ }
+ .sp-nav li span {
+    font-size: 15px;
+    color: #E0780E;
+ }
+ .sp-nav li a, .sp-nav li span {
+    display: block;
+    padding: 20px 0;
+ }
+
+ .sp-nav .nav_close {
+  position: relative;
+  padding-left: 20px;
+}
+
+.sp-nav .nav_close::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 1px;
+  background: #fff;
+  transform: rotate( 45deg );
+}
+
+.sp-nav .nav_close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 1px;
+  background: #fff;
+  transform: rotate( -45deg );
+}
+
+.toggle {
+  transform: translateY( 0 );
+  opacity: 1;
+}
+
+#header {
+  height: 80px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.hd-h1 {
+  font-size: 16px;
+}
+
+/* Page1 Design for SP */
+.pg-1 {
+    height: 350px;
+    background-image: url("../../content/img/widesite.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .pg1-top-text {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  
+  .pg1-h1 {
+    font-size: 45px;
+    color: #fff;
+
+  }
+  
+  .pg1-h2 {
+    font-size: 10px;
+    color: #fff;
+  }
+
+  .pg1-h1, .pg1-h2 {
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-right: 105px;
+  }
+
+  .pg1-2 {
+    height: 350px;
+  }
+
+  .pg1-2-h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #E0780E;  
+  }
+
+  .pg1-2text p {
+    font-size: 10px;
+  }
+
+/* Page2 Design for SP */
+ .pg2-subtext h2 {
+    font-size: 22px;
+ }
+ 
+ .pg2-subtext h3 {
+  font-size: 15px;
+}
+
+.pg2-bottom-box {
+  width: 100%;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.pg2-bottom-sub {
+  height: 400px;
+  text-align: center;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: double 5px #E0780E;
+}
+
+.pg2-box-p1 {
+  width: 40%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #E0780E;
+}
+
+/* Page3 Design for SP */
+.pg-3 {
+  height: 750px;
+  background-color: #755B41;
+}
+
+.pg3-h1 {
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+}
+
+.pg3-up-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 0;
+}
+
+.pg3-up-sub img {
+  /*width: 100%;*/ /* Ensure the image takes up the full width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 0;
+}
+
+.pg3-up-h3 {
+  font-size: 20px;
+}
+
+.pg3-down-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pg3-down-h3 {
+  font-size: 20px;
+}
+
+/* Page5 Design for SP */
+.pg5-h2 {
+  font-size: 50px;
+}
+
+.pg5-box {
+  width: 100%;
+  display: block; /* Changed to block for natural stacking of paragraphs */
+  background-color: #fff;
+  color: #E0780E;
+  text-align: center;
+  border-radius: 5px;
+  border: double 5px #E0780E;
+  margin: auto;
+  padding: 1px; /* Add padding to give some space around the content */
+}
+
+.pg5-mid-box {
+  display: block;
+  width: 90%;
+  border-bottom: 2px solid #E0780E;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.pg5-bottom-box {
+  width: 90%;
+  margin-top: 20px;
+  padding: 0; /* Adjust padding to remove extra space */
+}
+
+.pg5-bottom-box ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0; /* Ensure there's no space between the lists */
+  padding-top: 0;
+}
+
+.pg5-bottom-box .pg5-top-list {
+  margin-bottom: 0; /* Remove bottom margin or padding if present */
+  padding-bottom: 0;
+}
+
+.pg5-bottom-box li {
+  position: relative;
+  font-size: 23px;
+}
+
+.pg5-bottom-box li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: .5em;
+  left: 0;
+  width: 10px;
+  height: 5px;
+  border-left: 5px solid #E0780E;
+  border-bottom: 5px solid #E0780E;
+  transform: rotate(-45deg);
+}
+
+/* Page6 Design for SP */
+.pg-6 {
+  padding: 20px 10px; /* Reduce padding */
+}
+
+.pg6-h1 {
+  font-size: 24px; /* Smaller heading size */
+  text-align: center;
+}
+
+.pg6-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center content */
+}
+
+.pg6-img, .pg6-intro {
+  width: 100%; /* Full width for both image and text */
+  margin: 10px 0; /* Add some spacing between items */
+  text-align: center; /* Center-align text */
+}
+
+.pg6-img img {
+  width: 220px;
+  height: 240px;
+  border-radius: 50%;
+}
+
+.pg6-intro br {
+  display: none;
+}
+
+.pg6-intro p {
+  text-align: left;
+  font-size: 14px; /* Adjust text size for readability */
+  margin: 10px 0; /* Add space between paragraphs */
+}
+
+/* Free Lesson Page Design for SP */
+.free-lesson {
+  height: 500px;
+  background-color: #E0780E;
+}
+
+.pc-nav {
+  display: none;
+}
+
+.pgFL-h2 {
+  font-size: 25px;
+  color: #E0780E;
+  margin-top: 0;
+}
+
+.pgFL-box {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #E0780E;
+  text-align: center;
+  border-radius: 30px;
+  border: single 5px #E0780E;
+  margin: auto;
+  margin-top: 20px;
+  padding: 1px; /* Add padding to give some space around the content */
+}
+
+.pgFL-top-box {
+  order: 2;
+  width: 100%;
+  margin-top: 0;
+}
+
+.pgFL-top-box p {
+  font-size: 13px;
+}
+
+
+.pgFL-bottom-box {
+  order: 1;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.pgFL-bottom-box p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Page7 Design for SP */
+.pg-7 {
+  height: 1000px;
+}
+
+.pg7-h1 {
+  font-size: 30px;
+}
+
+.pg7-bottom-sub img {
+  width: 55px;
+}
+
+.pg7-bottom-sub {
+  flex: 1;
+  height: 180px;
+  text-align: center;
+  margin: 7px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: double 5px #E0780E;
+}
+
+.pg7-bottom-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.pg7-box-text {
+  font-size: 16px;
+}
+
+.pg7-box-p1 {
+  width: 55%;
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #E0780E;
+}
+
+
+/*
+.pg7-h1 {
+  font-size: 35px;
+}
+
+.pg7-bottom-box {
+width: 100%;
+flex-direction: column;
+padding: 10px;
+}
+
+.pg7-bottom-sub {
+height: 400px;
+text-align: center;
+margin: 10px;
+border-radius: 5px;
+background-color: #fff;
+border: double 5px #E0780E;
+}
+
+.pg7-box-p1 {
+width: 40%;
+text-align: center;
+margin: 0;
+padding: 0;
+color: #fff;
+background-color: #E0780E;
+}
+*/
+
+
+  .pg-2, .pg-3, .pg-4, .pg-5, .pg-6 {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .pg2-bottom-sub {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .pg3-up-sub, .pg3-down-sub, .pg4-bottom-sub {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .pg4-bottom-box {
+    flex-direction: column;
+  }
+
+
+
+}
+
+/* Responsive for Tablets (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  #header {
+    height: 90px;
+    padding: 15px;
+  }
+
+  .hd-h1 {
+    font-size: 18px;
+  }
+
+  .pg1-h1, .pg1-h2 {
+    font-size: 32px;
+    letter-spacing: 8px;
+  }
+
+  .pg-1, .pg-2, .pg-3, .pg-4, .pg-5, .pg-6 {
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .pg2-bottom-sub {
+    width: 45%;
+    margin-bottom: 15px;
+  }
+
+  .pg3-up-sub, .pg3-down-sub, .pg4-bottom-sub {
+    width: 45%;
+    margin-bottom: 15px;
+  }
+
+  .pg4-bottom-box {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/* Desktop (min-width: 901px) - already styled by default above */
+
+
+
+
