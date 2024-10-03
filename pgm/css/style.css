@@ -21,6 +21,7 @@
  html {
   color: #000;
   background: #fff;
+  scroll-behavior: smooth;
  }
 
  body {
@@ -42,6 +43,12 @@
   align-items: center;
   backdrop-filter: blur(10px);
 }
+
+section:target {
+  padding-top: 100px; /* Adjust this based on your header height */
+  margin-top: -100px;  /* Same value as padding-top */
+}
+
 
 /* Header Up & Down Movement */
 #header.Upmove {
@@ -196,6 +203,8 @@ section {
   letter-spacing: 10px;
 }
 
+
+/* Page 1-2 section */
 .pg1-2 {
   height: 900px;
 }
@@ -240,6 +249,49 @@ h1.bee::after {
   line-height: 2.6vh;
 }
 
+.pg1-2text p {
+  opacity: 0;
+  animation: fadeInText 1.5s ease forwards;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pg1-2text p:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.pg1-2text p:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.typing-effect {
+  font-family: 'Courier', monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
+
 /*
 .pg1-2loop {
   margin : 0 auto 1px;
@@ -277,6 +329,18 @@ h1.bee::after {
 
 .pg2-subtext {
   text-align: center;
+  opacity: 0;
+  animation: fadeInText 2s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .pg2-points {
@@ -284,10 +348,21 @@ h1.bee::after {
 }
 
 .pg2-bottom-box {
-  width: 100%;
   display: flex;
   justify-content: center;
   padding: 10px;
+  animation: slideInBoxes 1.5s ease forwards;
+}
+
+@keyframes slideInBoxes {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .pg2-bottom-sub {
@@ -299,10 +374,11 @@ h1.bee::after {
   background-color: #fff;
   border: double 5px #E0780E;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.5s ease;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .pg2-bottom-sub:hover {
+  transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -313,7 +389,18 @@ h1.bee::after {
   padding: 0;
   color: #fff;
   background-color: #E0780E;
+  animation: glowEffect 1.5s ease-in-out infinite alternate;
 }
+
+@keyframes glowEffect {
+  0% {
+    box-shadow: 0 0 10px #E0780E;
+  }
+  100% {
+    box-shadow: 0 0 20px #E0780E;
+  }
+}
+
 
 /* ▼ Page Three */
 .pg-3 {
@@ -567,29 +654,80 @@ h1.bee::after {
 .pg-5 {
   height: 700px;
   background-color: #E0780E;
+  background: linear-gradient(45deg, #E0780E, #FFD600);
+  background-size: 300% 300%;
+  animation: gradientBG 6s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .pg5-h1 {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
+  color: #fff;
+  animation: bounceInTitle 1.5s ease-in-out;
+}
+
+@keyframes bounceInTitle {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .pg5-h2 {
   font-size: 60px;
   color: #E0780E;
+  animation: pulseEffect 2s infinite;
 }
+
+@keyframes pulseEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 .pg5-box {
   width: 1000px;
-  display: block; /* Changed to block for natural stacking of paragraphs */
   background-color: #fff;
   color: #E0780E;
   text-align: center;
   border-radius: 5px;
   border: double 5px #E0780E;
   margin: auto;
-  padding: 1px; /* Add padding to give some space around the content */
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+.pg5-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
 
 .pg5-top-box {
   line-height: 1px;
@@ -846,6 +984,35 @@ h1.bee::after {
   border-radius: 5px;
   background-color: #fff;
   border: double 5px #E0780E;
+  animation: fadeSlideIn 1.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+.pg7-bottom-sub:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pg7-bottom-sub:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.pg7-bottom-sub:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.pg7-bottom-sub:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+      transform: translateY(50px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
 }
 
 .pg7-box-text {
