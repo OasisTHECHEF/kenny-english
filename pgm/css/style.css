@@ -781,7 +781,7 @@ h1.bee::after {
 
 /* ▼ Page Six */
 .pg-6 {
-  height: 900px;
+  height: 1000px;
 }
 
 .pg6-h1 {
@@ -1225,8 +1225,8 @@ main {
 
 /* Logo and Header design */
   .logo img {
-    width: 80px;
-    height: 80px;
+    width: 55px;
+    height: 50px;
   }
 
   .pc-nav {
@@ -1501,21 +1501,31 @@ main {
       box-sizing: border-box; /* Include padding and borders in element's total width/height */
     }
   
-    /* Inside the card */
     .pg4-card {
       width: 100%;
-      height: auto; /* Ensure content height adjusts properly */
-      transform: none; /* Disable 3D transform on small screens */
-    }
-  
-    /* Front and back of card */
-    .pg4-card-front, .pg4-card-back {
+      height: auto;
+      transform: none; /* Disable the 3D flip transform */
+      display: flex;
+      flex-direction: column;
       position: relative;
+  }
+
+  .pg4-card-front,
+  .pg4-card-back {
       width: 100%;
       height: auto;
-      backface-visibility: visible; /* Ensure both sides are visible on small screens */
+      position: static; /* Remove positioning that causes reversing */
+      transform: none; /* Prevent rotation */
+      backface-visibility: visible; /* Ensure both sides are visible */
       padding: 10px;
-    }
+      box-sizing: border-box;
+  }
+
+  .pg4-card-back {
+      background-color: #f8f8f8; /* Provide a different background to distinguish it from the front */
+      color: #000; /* Adjust text color for readability */
+      margin-top: 10px; /* Add spacing between the front and back content */
+  }
   
     /* Image adjustments */
     .pg4-card-front img {
