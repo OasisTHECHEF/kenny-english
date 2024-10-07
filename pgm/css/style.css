@@ -1223,6 +1223,11 @@ main {
 
 @media screen and (max-width: 600px) {
 
+  section:target {
+    padding-top: 70px; /* Smaller header size */
+    margin-top: -70px; /* Same value as padding-top */
+  }
+
 /* Logo and Header design */
   .logo img {
     width: 55px;
