@@ -1452,7 +1452,7 @@ main {
 
 .pg3-h1 {
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
   color: #fff;
 }
 
@@ -1465,7 +1465,8 @@ main {
 
 .pg3-up-sub img {
   /*width: 100%;*/ /* Ensure the image takes up the full width */
-  height: auto; /* Maintain aspect ratio */
+  width: 330px;
+  height: 230px; /* Maintain aspect ratio */
   margin-bottom: 0;
 }
 
@@ -1850,4 +1851,3 @@ background-color: #E0780E;
 }
 
 /* Desktop (min-width: 901px) - already styled by default above */
-
