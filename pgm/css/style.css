@@ -1480,6 +1480,13 @@ main {
   align-items: center;
 }
 
+.pg3-down-sub img {
+  /*width: 100%;*/ /* Ensure the image takes up the full width */
+  width: 330px;
+  height: 230px; /* Maintain aspect ratio */
+  margin-bottom: 0;
+}
+
 .pg3-down-h3 {
   font-size: 20px;
 }
