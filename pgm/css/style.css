@@ -186,9 +186,9 @@ section {
 .pg1-top-text {
   line-height: 30px;
   position: absolute; /* Change from relative to absolute for precise control */
-  top: 130px; /* Move down by adjusting this value */
+  top: 170px; /* Move down by adjusting this value */
   left: 440px; /* Move it to the left by adjusting this value */
-  text-align: left; /* Align text to the left */
+  text-align: center; /* Align text to the left */
   z-index: 2;
 }
 
@@ -1182,11 +1182,7 @@ main {
   background-size: cover;
 }
 
-.pg1-top-text {
-  text-align: center;
-  margin-top: 50px;
-  margin-right: 300px;
-}
+
 
 .pg1-h1, .pg1-h2 {
   color: #fff;
@@ -1354,26 +1350,16 @@ main {
   }
 
   .pg1-top-text {
-    text-align: center;
-    margin-top: 10px;
-    margin-right: 0;
-  }
-  
-  .pg1-h1 {
-    font-size: 45px;
-    color: #fff;
-
-  }
-  
-  .pg1-h2 {
-    font-size: 10px;
-    color: #fff;
+    position: absolute;
+    top: 80px; /* Adjust for smaller screens */
+    left: 30px; /* Adjust for smaller screens */
+    text-align: left; /* Keep text aligned to the left */
+    z-index: 2;
   }
 
-  .pg1-h1, .pg1-h2 {
-    font-size: 10px;
-    letter-spacing: 3px;
-    margin-right: 105px;
+  .pg1-h {
+    font-size: 15px; /* Reduce font size for smaller screens */
+    letter-spacing: 5px; /* Adjust letter spacing */
   }
 
   .pg1-2 {
