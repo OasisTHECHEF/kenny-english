@@ -367,7 +367,7 @@ h1.bee::after {
 
 .pg2-bottom-sub {
   flex: 1;
-  height: 400px;
+  height: 300px;
   text-align: center;
   margin: 10px;
   border-radius: 5px;
@@ -380,6 +380,11 @@ h1.bee::after {
 .pg2-bottom-sub:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pg2-bottom-sub img {
+  width: 60px;
+  height: 60px;
 }
 
 .pg2-box-p1 {
