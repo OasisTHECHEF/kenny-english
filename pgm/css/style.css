@@ -184,21 +184,15 @@ section {
 }
 
 .pg1-top-text {
-  text-align: center;
-  line-height: 20px;
-  margin-top: 50px;
-  margin-right: 300px;
-  position: relative;
+  line-height: 30px;
+  position: absolute; /* Change from relative to absolute for precise control */
+  top: 130px; /* Move down by adjusting this value */
+  left: 440px; /* Move it to the left by adjusting this value */
+  text-align: left; /* Align text to the left */
   z-index: 2;
 }
 
-.pg1-h1 {
-  color: #fff;
-  letter-spacing: 10px;
-}
-
-.pg1-h2 {
-  font-size: 40px;
+.pg1-h {
   color: #fff;
   letter-spacing: 10px;
 }
@@ -1095,17 +1089,6 @@ textarea {
 
 /* ▼  Footer */
 
-.ft-logo {
-  display: inline-block;
-  font-size: 20px;
-  font-weight: bold;
-  margin:  0 auto 5%;
-  background: linear-gradient(90deg, #FFD600 0%, #FF7A00 40%, #FF0069 80%, #D300C5, #7638FA);
-  -webkit-background-clip: text;
-  background-clip: none;
-  -webkit-text-fill-color: transparent;
-}
-
 hr {
   height: 1px;
   border: 0;
@@ -1127,15 +1110,6 @@ hr {
 
 .footer_navi {
   display: block;
-}
-
-.footer_navi-heading {
-  font-weight: 600;
-}
-
-.footer_logo {
-  display: inline-block;
-  margin-bottom: 2rem;
 }
 
 .footer_navi li {
@@ -1775,6 +1749,14 @@ main {
   background-color: #E0780E;
 }
 
+.footer_navi ul {
+  display: flex;
+}
+
+.footer_navi li {
+  list-style: none;
+  margin-left: 20px;
+}
 
 /*
 .pg7-h1 {
