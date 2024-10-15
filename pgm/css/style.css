@@ -964,7 +964,7 @@ h1.bee::after {
 
 /* ▼ Page Seven */
 .pg-7 {
-  height: 2100px;
+  height: 2050px;
 }
 
 .pg7-bottom-box {
@@ -1401,13 +1401,15 @@ main {
 }
 
 .pg2-box-p1 {
-  width: 40%;
+  width: 35%;
+  font-size: 30px;
   text-align: center;
   margin: 0;
   padding: 0;
   color: #fff;
   background-color: #E0780E;
 }
+
 
 /* Page3 Design for SP */
 .pg-3 {
@@ -1536,6 +1538,10 @@ main {
 
 
 /* Page5 Design for SP */
+.pg5-h1 {
+  font-size: 35px;
+}
+
 .pg5-h2 {
   font-size: 50px;
 }
@@ -1550,6 +1556,10 @@ main {
   border: double 5px #E0780E;
   margin: auto;
   padding: 1px; /* Add padding to give some space around the content */
+}
+
+.pg5-top-box p {
+  font-size: 15px;
 }
 
 .pg5-mid-box {
@@ -1595,6 +1605,15 @@ main {
   border-bottom: 5px solid #E0780E;
   transform: rotate(-45deg);
 }
+
+.pg5-top-list li {
+  font-size: 25px;
+}
+
+.pg5-bottom-list li {
+  font-size: 22px;
+}
+
 
 /* Page6 Design for SP */
 .pg-6 {
