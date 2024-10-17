@@ -1559,7 +1559,7 @@ main {
 }
 
 .pg5-top-box p {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .pg5-mid-box {
@@ -1716,10 +1716,11 @@ main {
 
 .pg7-h1 {
   font-size: 30px;
+  color: #E0780E;
 }
 
 .pg7-bottom-sub img {
-  width: 55px;
+  width: 80px;
 }
 
 .pg7-bottom-sub {
@@ -1741,11 +1742,11 @@ main {
 }
 
 .pg7-box-text {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .pg7-box-p1 {
-  width: 55%;
+  width: 60%;
   font-size: 15px;
   text-align: center;
   margin: 0;
