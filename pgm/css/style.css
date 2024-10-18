@@ -192,7 +192,12 @@ section {
   z-index: 2;
 }
 
-.pg1-h {
+.pg1-h1 {
+  color: #fff;
+  letter-spacing: 10px;
+}
+
+.pg1-h3 {
   color: #fff;
   letter-spacing: 10px;
 }
