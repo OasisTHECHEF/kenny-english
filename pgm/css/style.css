@@ -1227,7 +1227,7 @@ main {
   height: 100vh;
   display: block;
   width: 100%;
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, .9);
   opacity: 0;
   transform: translateY(-100%);
   transition: all .2s ease-in-out;
@@ -1348,8 +1348,9 @@ main {
 
 .sp-lsn-btn {
   color: #fff;
-  padding: 15px 25px;
-  border-radius: 6px;
+  padding: 10px;
+  border: 3px solid #E0780E;
+  border-radius: 60px;
   animation: bounceInButton 1.5s ease-out;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1456,7 +1457,7 @@ main {
 }
 
 .pg3-up-h3 {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .pg3-down-container {
@@ -1473,7 +1474,7 @@ main {
 }
 
 .pg3-down-h3 {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 /* Page4 Design for SP */
@@ -1729,7 +1730,7 @@ main {
 
 /* Page7 Design for SP */
 .pg-7 {
-  height: 2500px;
+  height: 2400px;
 }
 
 .pg7-h1 {
