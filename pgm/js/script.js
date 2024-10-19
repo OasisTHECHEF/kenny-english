@@ -41,14 +41,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
   var typeText = [
-    "Kenny's English", 
-    "Private Lesson",
-    "Speaking",
-    "Listening",
-    "Reading",
-    "あなたのレベルに合わせたレッスン",
-    "教科書には載っていない方法で",
-    "英語を話せるようになりましょう"
+    "「英語脳への改造」", 
+    "オンライン英会話",
+    "Prject English",
   ]
 
 var cond = 0,
