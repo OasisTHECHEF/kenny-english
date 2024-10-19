@@ -329,9 +329,13 @@ h1.bee::after {
 
 .pg2-subtext {
   text-align: center;
-  opacity: 0;
-  animation: fadeInText 2s ease forwards;
+  opacity: 0; /* Hidden initially */
+  transform: translateY(30px); /* Slightly down */
+  animation: fadeInUp 1.5s ease-out forwards, colorPulse 3s infinite ease-in-out;
   animation-delay: 0.5s;
+  font-size: 24px;
+  color: #E0780E;
+  font-weight: bold;
 }
 
 @keyframes fadeInText {
@@ -340,6 +344,31 @@ h1.bee::after {
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* Keyframes for fade and slide-up effect */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Pulsing color animation */
+@keyframes colorPulse {
+  0% {
+      color: #E0780E;
+  }
+  50% {
+      color: #FF7A00;
+  }
+  100% {
+      color: #E0780E;
   }
 }
 
@@ -1394,6 +1423,12 @@ main {
   }
 
 /* Page2 Design for SP */
+
+.pg2-subtext {
+  font-size: 20px;
+  animation: fadeInUp 1.2s ease-out forwards, colorPulse 3s infinite ease-in-out;
+}
+
  .pg2-subtext h2 {
     font-size: 22px;
  }
