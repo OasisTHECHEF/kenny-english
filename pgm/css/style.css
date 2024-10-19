@@ -969,7 +969,7 @@ h1.bee::after {
 
 /* ▼ Page Seven */
 .pg-7 {
-  height: 2200px;
+  height: 2400px;
 }
 
 .pg7-bottom-box {
@@ -1419,8 +1419,8 @@ main {
 }
 
 .pg2-box-p1 {
-  width: 35%;
-  font-size: 30px;
+  width: 45%;
+  font-size: 27px;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -1729,7 +1729,7 @@ main {
 
 /* Page7 Design for SP */
 .pg-7 {
-  height: 2100px;
+  height: 2500px;
 }
 
 .pg7-h1 {
