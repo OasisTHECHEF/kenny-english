@@ -1401,7 +1401,7 @@ main {
     line-height: 15px;
     position: relative;
     margin-top: 40px;
-    margin-right: 120px;
+    margin-right: 110px;
     text-align: center;
     z-index: 2;
   }
@@ -1414,7 +1414,7 @@ main {
 
   .pg1-h1 {
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 5px;
   }
   
