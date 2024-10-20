@@ -165,8 +165,8 @@ section {
 
 /* ▼ Page One */
 .pg-1 {
-  height: 600px;
-  background-image: url("../../content/img/widesite.jpg");
+  height: 620px;
+  background-image: url("../../content/img/sunset1.JPG");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -179,26 +179,28 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.3); /* Dark overlay */
   z-index: 1;
 }
 
 .pg1-top-text {
   line-height: 30px;
-  position: absolute; /* Change from relative to absolute for precise control */
-  top: 170px; /* Move down by adjusting this value */
-  left: 440px; /* Move it to the left by adjusting this value */
+  position: relative; /* Change from relative to absolute for precise control */
+  margin-top: 120px;
+  margin-right: 500px;
   text-align: center; /* Align text to the left */
   z-index: 2;
 }
 
 .pg1-h1 {
   color: #fff;
+  font-size: 45px;
   letter-spacing: 10px;
 }
 
 .pg1-h3 {
   color: #fff;
+  font-size: 30px;
   letter-spacing: 10px;
 }
 
@@ -1390,23 +1392,32 @@ main {
 /* Page1 Design for SP */
 .pg-1 {
     height: 350px;
-    background-image: url("../../content/img/widesite.jpg");
+    background-image: url("../../content/img/sunset1.JPG");
     background-position: center;
     background-size: cover;
   }
 
   .pg1-top-text {
-    position: absolute;
-    top: 80px; /* Adjust for smaller screens */
-    left: 30px; /* Adjust for smaller screens */
-    text-align: left; /* Keep text aligned to the left */
+    line-height: 15px;
+    position: relative;
+    margin-top: 40px;
+    margin-right: 120px;
+    text-align: center;
     z-index: 2;
   }
 
-  .pg1-h {
-    font-size: 15px; /* Reduce font size for smaller screens */
-    letter-spacing: 5px; /* Adjust letter spacing */
+  .pg1-h3 {
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 5px;
   }
+
+  .pg1-h1 {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+  
 
   .pg1-2 {
     height: 350px;
@@ -1793,7 +1804,7 @@ main {
 
 .pg7-bottom-sub {
   flex: 1;
-  height: 200px;
+  height: 210px;
   text-align: center;
   margin: 7px;
   border-radius: 5px;
@@ -1814,8 +1825,8 @@ main {
 }
 
 .pg7-box-p1 {
-  width: 65%;
-  font-size: 15px;
+  width: 80%;
+  font-size: 16px;
   text-align: center;
   margin: 0;
   padding: 0;
