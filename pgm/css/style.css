@@ -1403,7 +1403,7 @@ main {
 
 /* Page1 Design for SP */
 .pg-1 {
-    height: 350px;
+    height: 600px;
     background-image: url("../../content/img/sunset1.JPG");
     background-position: center;
     background-size: cover;
@@ -1411,7 +1411,7 @@ main {
 
   .pg1-top-text {
     position: relative;
-    margin-top: 60px; /* Reduce the margin to move it higher */
+    margin-top: 150px; /* Reduce the margin to move it higher */
     margin-left: 5px;
     z-index: 2;
   }
@@ -1425,8 +1425,8 @@ main {
   .pg1-bottom-text {
     line-height: 7px;
     position: relative;
-    margin-top: 10px; /* Adjust this value to move it higher */
-    margin-right: 120px;
+    margin-top: 20px; /* Adjust this value to move it higher */
+    margin-right: 70px;
     text-align: center;
     z-index: 2;
   }
