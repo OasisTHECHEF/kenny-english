@@ -1411,7 +1411,7 @@ main {
 
   .pg1-top-text {
     position: relative;
-    margin-top: 75px; /* Reduce the margin to move it higher */
+    margin-top: 60px; /* Reduce the margin to move it higher */
     margin-left: 5px;
     z-index: 2;
   }
@@ -1423,10 +1423,10 @@ main {
   }
 
   .pg1-bottom-text {
-    line-height: 10px;
+    line-height: 7px;
     position: relative;
-    margin-top: -3px; /* Adjust this value to move it higher */
-    margin-right: 150px;
+    margin-top: 10px; /* Adjust this value to move it higher */
+    margin-right: 120px;
     text-align: center;
     z-index: 2;
   }
@@ -1439,7 +1439,7 @@ main {
 
   .pg1-h1 {
     color: #fff;
-    font-size: 15px;
+    font-size: 13px;
     letter-spacing: 5px;
   }
   
