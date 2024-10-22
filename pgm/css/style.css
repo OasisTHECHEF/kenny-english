@@ -184,23 +184,35 @@ section {
 }
 
 .pg1-top-text {
-  line-height: 30px;
+  position: relative;
+  margin-top: 200px;
+  margin-left: 50px;
+  z-index: 2;
+}
+
+.pg1-top-text h1 {
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 7px;
+}
+
+.pg1-bottom-text {
+  line-height: 15px;
   position: relative; /* Change from relative to absolute for precise control */
-  margin-top: 120px;
-  margin-right: 500px;
+  margin-right: 800px;
   text-align: center; /* Align text to the left */
   z-index: 2;
 }
 
 .pg1-h1 {
   color: #fff;
-  font-size: 45px;
+  font-size: 30px;
   letter-spacing: 10px;
 }
 
 .pg1-h3 {
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   letter-spacing: 10px;
 }
 
@@ -1398,23 +1410,36 @@ main {
   }
 
   .pg1-top-text {
-    line-height: 15px;
     position: relative;
-    margin-top: 40px;
-    margin-right: 110px;
+    margin-top: 75px; /* Reduce the margin to move it higher */
+    margin-left: 5px;
+    z-index: 2;
+  }
+  
+  .pg1-top-text h1 {
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
+
+  .pg1-bottom-text {
+    line-height: 10px;
+    position: relative;
+    margin-top: -3px; /* Adjust this value to move it higher */
+    margin-right: 150px;
     text-align: center;
     z-index: 2;
   }
 
   .pg1-h3 {
     color: #fff;
-    font-size: 15px;
+    font-size: 10px;
     letter-spacing: 5px;
   }
 
   .pg1-h1 {
     color: #fff;
-    font-size: 25px;
+    font-size: 15px;
     letter-spacing: 5px;
   }
   
