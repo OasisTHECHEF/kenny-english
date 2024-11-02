@@ -1671,7 +1671,7 @@ main {
   }
 
   .pg1-2bottom-box img {
-    width: 300px;
+    width: 250px;
     height: 300px;
     display: block; /* Make sure the image displays as a block-level element */
     margin: 0 auto; /* Center the image */
@@ -2099,7 +2099,7 @@ main {
 }
 
 .pgFL-bottom-box p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
