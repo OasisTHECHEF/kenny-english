@@ -1977,7 +1977,7 @@ main {
 }
 
 .pg5-box {
-  width: 90%;
+  width: 100%;
   max-width: 1000px; /* Set a reasonable max-width */
   margin: auto;
   display: block; /* Changed to block for natural stacking of paragraphs */
