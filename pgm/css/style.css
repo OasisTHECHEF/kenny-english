@@ -1932,7 +1932,7 @@ main {
   border: double 4px #E0780E;
   padding: 20px;
   border-radius: 10px;
-  width: 450px;
+  width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
 }
