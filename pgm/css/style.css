@@ -187,7 +187,7 @@ section {
 .pg1-top-text {
   position: relative;
   margin-top: 150px;
-  margin-left: 50px;
+  margin-left: 100px;
   z-index: 2;
 }
 
@@ -200,7 +200,7 @@ section {
 .pg1-bottom-text {
   line-height: 15px;
   position: relative; /* Change from relative to absolute for precise control */
-  margin-right: 800px;
+  margin-right: 500px;
   text-align: center; /* Align text to the left */
   z-index: 2;
 }
@@ -328,7 +328,7 @@ h1.bee::after {
 
 .pg1-2box {
   height: 400px;
-  width: 90%;
+  width: 70%;
   display: flex;
   justify-content: flex-start;
   background-color: #fff;
@@ -357,7 +357,7 @@ h1.bee::after {
 }
 
 .pg1-2top-box {
-  width: 50%;
+  width: 60%;
   margin-left: 20px;
   margin-right: 30px;
   margin-top: 30px;
@@ -368,12 +368,14 @@ h1.bee::after {
 }
 
 .pg1-2bottom-box {
-  width: 35%;
+  width: 40%;
   margin-top: -100px; /* Set margin-top to 0 to remove space at the top */
   order: 0; /* Ensure it's ordered before the other elements */
 }
 
 .pg1-2bottom-box img {
+  width: 350px;
+  height: 450px;
   display: block; /* Make sure the image displays as a block-level element */
   margin: 0 auto; /* Center the image */
 }
@@ -518,6 +520,7 @@ h1.bee::after {
 
 .pg2-box-p1 {
   width: 40%;
+  font-size: 40px;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -534,6 +537,12 @@ h1.bee::after {
     box-shadow: 0 0 20px #E0780E;
   }
 }
+
+.pg2-box-text {
+  font-size: 25px;
+  color: #E0780E;  
+}
+
 
 
 /* ▼ Page Three */
@@ -651,7 +660,7 @@ h1.bee::after {
 
 /* ▼ Page Four */
 .pg-4 {
-  height: 1100px;
+  height: 850px;
 }
 
 .pg4-h1 {
@@ -786,7 +795,13 @@ h1.bee::after {
 /* Student's Voice Section */
 .pg-student-voice {
   padding: 40px;
-  background-color: #f7e1c1;
+  background: repeating-linear-gradient(
+    45deg,
+    #755B41,
+    #755B41 10px,
+    #6a4f3a 10px,
+    #6a4f3a 20px
+);
   text-align: center;
   color: #E0780E;
   min-height: 850px;
@@ -1579,7 +1594,7 @@ main {
     line-height: 7px;
     position: relative;
     margin-top: 20px; /* Adjust this value to move it higher */
-    margin-right: 70px;
+    margin-right: 50px;
     text-align: center;
     z-index: 2;
   }
@@ -1727,6 +1742,11 @@ main {
   margin-top: 20px;
   width: 55x;
   height: 55px;
+}
+
+.pg2-box-text {
+  font-size: 22px;
+  color: #E0780E;  
 }
 
 
