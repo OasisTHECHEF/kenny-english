@@ -800,7 +800,6 @@ h1.bee::after {
 
 /* Student's Voice Section */
 .pg-student-voice {
-  width: 100%;
   padding: 40px;
   background: repeating-linear-gradient(
     45deg,
@@ -833,9 +832,7 @@ h1.bee::after {
   border: double 4px #E0780E;
   padding: 20px;
   border-radius: 10px;
-  width: 90%; /* Change to a responsive width */
-  max-width: 450px;
-  margin: 0 auto; /* Center and avoid overflow */
+  width: 450px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
 }
@@ -1905,7 +1902,6 @@ main {
 
 /* Student's Voice Section */
 .pg-student-voice {
-  width: 100%;
   padding: 15px;
   background-color: #f7e1c1;
   text-align: center;
@@ -1936,8 +1932,7 @@ main {
   border: double 4px #E0780E;
   padding: 20px;
   border-radius: 10px;
-  width: 90%; /* Instead of a fixed 450px */
-  max-width: 450px;
+  width: 450px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
 }
