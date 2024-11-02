@@ -168,6 +168,7 @@ section {
 .pg-1 {
   height: 620px;
   background-image: url("../../content/img/sunset1.JPG");
+  width: 100%;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -221,6 +222,7 @@ section {
 /* Page 1-2 section */
 .pg1-2 {
   height: 1000px;
+  width: 100%;
 }
 
 .pg1-2-h1 {
@@ -328,7 +330,9 @@ h1.bee::after {
 
 .pg1-2box {
   height: 400px;
-  width: 70%;
+  width: 90%;
+  max-width: 1000px; /* Set a reasonable max-width */
+  margin: auto;
   display: flex;
   justify-content: flex-start;
   background-color: #fff;
@@ -336,7 +340,6 @@ h1.bee::after {
   text-align: center;
   border-radius: 30px;
   border: single 5px #E0780E;
-  margin: auto;
   margin-top: 270px;
   padding: 1px; /* Add padding to give some space around the content */
   animation: floatBox 3s ease-in-out infinite;
@@ -426,6 +429,7 @@ h1.bee::after {
 /* ▼ Page Two */
 .pg-2 {
   height: 900px;
+  width: 100%;
 }
 
 .pg2-subtext {
@@ -549,6 +553,7 @@ h1.bee::after {
 .pg-3 {
   height: 1000px;
   background-color: #755B41;
+  width: 100%;
 }
 
 .pg3-h1 {
@@ -661,6 +666,7 @@ h1.bee::after {
 /* ▼ Page Four */
 .pg-4 {
   height: 850px;
+  width: 100%;
 }
 
 .pg4-h1 {
@@ -794,6 +800,7 @@ h1.bee::after {
 
 /* Student's Voice Section */
 .pg-student-voice {
+  width: 100%;
   padding: 40px;
   background: repeating-linear-gradient(
     45deg,
@@ -826,7 +833,9 @@ h1.bee::after {
   border: double 4px #E0780E;
   padding: 20px;
   border-radius: 10px;
-  width: 450px;
+  width: 90%; /* Change to a responsive width */
+  max-width: 450px;
+  margin: 0 auto; /* Center and avoid overflow */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
 }
@@ -860,6 +869,7 @@ h1.bee::after {
 /* ▼ Page Five */
 .pg-5 {
   height: 700px;
+  width: 100%;
   background-color: #E0780E;
   background: linear-gradient(45deg, #E0780E, #FFD600);
   background-size: 300% 300%;
@@ -919,13 +929,14 @@ h1.bee::after {
 
 
 .pg5-box {
-  width: 1000px;
+  width: 90%;
+  max-width: 1000px; /* Set a reasonable max-width */
+  margin: auto;
   background-color: #fff;
   color: #E0780E;
   text-align: center;
   border-radius: 5px;
   border: double 5px #E0780E;
-  margin: auto;
   padding: 20px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -989,6 +1000,7 @@ h1.bee::after {
 /* ▼ Page Six */
 .pg-6 {
   height: 1000px;
+  width: 100%;
 }
 
 .pg6-h1 {
@@ -1083,6 +1095,7 @@ h1.bee::after {
 /* ▼ Free Lesson */
 .free-lesson {
   height: 550px;
+  width: 100%;
   background-color: #E0780E;
   background: linear-gradient(45deg, #E0780E, #FFD600);
   background-size: 400% 400%;
@@ -1173,6 +1186,7 @@ h1.bee::after {
 /* ▼ Page Seven */
 .pg-7 {
   height: 2400px;
+  width: 100%;
 }
 
 .pg7-bottom-box {
@@ -1572,6 +1586,7 @@ main {
 /* Page1 Design for SP */
 .pg-1 {
     height: 600px;
+    width: 100%;
     background-image: url("../../content/img/sunset1.JPG");
     background-position: center;
     background-size: cover;
@@ -1579,6 +1594,8 @@ main {
 
   .pg1-top-text {
     position: relative;
+    margin: 0 5%; /* Apply responsive margins */
+    padding: 0;
     margin-top: 150px; /* Reduce the margin to move it higher */
     margin-left: 5px;
     z-index: 2;
@@ -1593,6 +1610,8 @@ main {
   .pg1-bottom-text {
     line-height: 7px;
     position: relative;
+    margin: 0 5%; /* Apply responsive margins */
+    padding: 0;
     margin-top: 20px; /* Adjust this value to move it higher */
     margin-right: 50px;
     text-align: center;
@@ -1614,6 +1633,7 @@ main {
 
   .pg1-2 {
     height: 1000px;
+    width: 100%;
   }
 
   .pg1-2-h1 {
@@ -1639,7 +1659,9 @@ main {
   
   .pg1-2box {
     height: 515px;
-    width: 100%;
+    width: 90%;
+    max-width: 1000px; /* Set a reasonable max-width */
+    margin: auto;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -1649,7 +1671,6 @@ main {
     text-align: center;
     border-radius: 30px;
     border: single 5px #E0780E;
-    margin: auto;
     margin-top: 100px;
     padding: 1px; /* Add padding to give some space around the content */
   }
@@ -1689,6 +1710,10 @@ main {
 
 
 /* Page2 Design for SP */
+
+.pg-2 {
+  width: 100%;
+}
 
 .pg2-subtext {
   font-size: 20px;
@@ -1753,6 +1778,7 @@ main {
 /* Page3 Design for SP */
 .pg-3 {
   height: 750px;
+  width: 100%;
   background-color: #755B41;
 }
 
@@ -1801,6 +1827,7 @@ main {
     /* Page 4 - General adjustments for mobile */
     .pg-4 {
       height: auto;
+      width: 100%;
       padding: 10px; /* Reduce overall padding */
     }
   
@@ -1878,6 +1905,7 @@ main {
 
 /* Student's Voice Section */
 .pg-student-voice {
+  width: 100%;
   padding: 15px;
   background-color: #f7e1c1;
   text-align: center;
@@ -1892,6 +1920,9 @@ main {
 }
 
 .student-container {
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; /* Ensure no overflow */
   display: flex;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -1905,7 +1936,8 @@ main {
   border: double 4px #E0780E;
   padding: 20px;
   border-radius: 10px;
-  width: 450px;
+  width: 90%; /* Instead of a fixed 450px */
+  max-width: 450px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
 }
@@ -1932,6 +1964,10 @@ main {
 
 
 /* Page5 Design for SP */
+.pg-5 {
+  width: 100%;
+}
+
 .pg5-h1 {
   font-size: 35px;
 }
@@ -1941,14 +1977,15 @@ main {
 }
 
 .pg5-box {
-  width: 100%;
+  width: 90%;
+  max-width: 1000px; /* Set a reasonable max-width */
+  margin: auto;
   display: block; /* Changed to block for natural stacking of paragraphs */
   background-color: #fff;
   color: #E0780E;
   text-align: center;
   border-radius: 5px;
   border: double 5px #E0780E;
-  margin: auto;
   padding: 1px; /* Add padding to give some space around the content */
 }
 
@@ -2011,6 +2048,7 @@ main {
 
 /* Page6 Design for SP */
 .pg-6 {
+  width: 100%;
   padding: 20px 10px; /* Reduce padding */
 }
 
@@ -2050,6 +2088,7 @@ main {
 /* Free Lesson Page Design for SP */
 .free-lesson {
   height: 500px;
+  width: 100%;
   background-color: #E0780E;
 }
 
@@ -2106,6 +2145,7 @@ main {
 /* Page7 Design for SP */
 .pg-7 {
   height: 2400px;
+  width: 100%;
 }
 
 .pg7-h1 {
