@@ -269,6 +269,7 @@ h1.bee::after {
 .pg1-2text p {
   opacity: 0;
   animation: fadeInText 1.5s ease forwards;
+  font-weight: bold;
 }
 
 @keyframes fadeInText {
