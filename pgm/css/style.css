@@ -1852,6 +1852,10 @@ main {
       border: double 5px #E0780E; /* Ensure border is shown */
       box-sizing: border-box; /* Include padding and borders in element's total width/height */
     }
+
+    .pg4-bottom-sub p {
+      text-align: left !important;
+    }
   
     .pg4-card {
       width: 100%;
