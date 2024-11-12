@@ -1585,11 +1585,12 @@ main {
 
 /* Page1 Design for SP */
 .pg-1 {
-    height: 600px;
+    height: 100vh;
     width: 100%;
     background-image: url("../../content/img/sunset1.JPG");
-    background-position: center;
     background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
   }
 
   .pg1-top-text {
