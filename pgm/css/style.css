@@ -50,6 +50,18 @@ section:target {
   margin-top: -100px;  /* Same value as padding-top */
 }
 
+.header-transparent {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+/* White background header */
+.header-white {
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+
 
 /* Header Up & Down Movement */
 #header.Upmove {
@@ -154,7 +166,7 @@ nav {
 }
 
 .logo img {
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 

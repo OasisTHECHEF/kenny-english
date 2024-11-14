@@ -32,7 +32,7 @@
 <body>
 <!-- Header -->
 <div class="top-area">
-    <header class="DownMove" id="header">
+    <header class="DownMove header-transparent" id="header">
         <div class="logo" id="logo">
             <a href="#pg-1"><img src="content/img/pelogo_stransparent.png" width="70" height="70" alt="kennys_english"></a>
         </div>
@@ -377,7 +377,20 @@
             </div>
           </div>
     </footer>
-
+    <script>
+        $(document).ready(function () {
+            const header = $('#header');
+    
+            $(window).on('scroll', function () {
+                // Check if the page has been scrolled past the pg-1 section
+                if ($(window).scrollTop() > $('#pg-1').height()) {
+                    header.removeClass('header-transparent').addClass('header-white');
+                } else {
+                    header.removeClass('header-white').addClass('header-transparent');
+                }
+            });
+        });
+    </script>
 </body>
 
 
