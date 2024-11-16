@@ -389,13 +389,13 @@ h1.bee::after {
 
 .pg1-2bottom-box {
   width: 40%;
-  margin-top: -100px; /* Set margin-top to 0 to remove space at the top */
+  margin-top: -90px; /* Set margin-top to 0 to remove space at the top */
   order: 0; /* Ensure it's ordered before the other elements */
 }
 
 .pg1-2bottom-box img {
   width: 350px;
-  height: 450px;
+  height: 370px;
   display: block; /* Make sure the image displays as a block-level element */
   margin: 0 auto; /* Center the image */
 }
