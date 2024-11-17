@@ -183,7 +183,7 @@ section {
 /* ▼ Page One */
 .pg-1 {
   height: 620px;
-  background-image: url("../../content/img/sunset1.JPG");
+  background-image: url("../../content/img/new_top.jpg");
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -1711,7 +1711,7 @@ main {
 
   .pg1-2bottom-box img {
     width: 250px;
-    height: 300px;
+    height: 270px;
     display: block; /* Make sure the image displays as a block-level element */
     margin: 0 auto; /* Center the image */
   }
