@@ -203,33 +203,35 @@ section {
 
 .pg1-top-text {
   position: relative;
-  margin-top: 150px;
-  margin-left: 100px;
+  text-align: right;
+  margin-top: 170px;
+  margin-right: 60px;
   z-index: 2;
 }
 
 .pg1-top-text h1 {
   color: #fff;
-  font-size: 50px;
-  letter-spacing: 7px;
+  font-size: 30px;
+  letter-spacing: 6px;
 }
 
 .pg1-bottom-text {
   line-height: 15px;
   position: relative; /* Change from relative to absolute for precise control */
-  margin-right: 500px;
-  text-align: center; /* Align text to the left */
+  text-align: right; /* Align text to the left */
   z-index: 2;
 }
 
 .pg1-h1 {
   color: #fff;
+  margin-right: 200px;
   font-size: 30px;
   letter-spacing: 10px;
 }
 
 .pg1-h3 {
   color: #fff;
+  margin-right: 250px;
   font-size: 20px;
   letter-spacing: 10px;
 }
@@ -346,7 +348,7 @@ h1.bee::after {
 }
 
 .pg1-2box {
-  height: 400px;
+  height: 350px;
   width: 90%;
   max-width: 1000px; /* Set a reasonable max-width */
   margin: auto;
@@ -1614,39 +1616,43 @@ main {
     position: relative;
     margin: 0 5%; /* Apply responsive margins */
     padding: 0;
-    margin-top: 150px; /* Reduce the margin to move it higher */
+    margin-top: 50px; /* Reduce the margin to move it higher */
     margin-left: 5px;
     z-index: 2;
   }
   
   .pg1-top-text h1 {
     color: #fff;
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 3px;
   }
 
   .pg1-bottom-text {
-    line-height: 7px;
-    position: relative;
-    margin: 0 5%; /* Apply responsive margins */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center align the elements horizontally */
+    margin: 0 auto;
     padding: 0;
-    margin-top: 20px; /* Adjust this value to move it higher */
-    margin-right: 50px;
+    width: 90%; /* Responsive width */
     text-align: center;
-    z-index: 2;
-  }
+}
 
-  .pg1-h3 {
-    color: #fff;
-    font-size: 10px;
-    letter-spacing: 5px;
-  }
+.pg1-h3,
+.pg1-h1 {
+    margin: 0; /* Remove inconsistent margins */
+    padding: 0;
+    line-height: 1.2; /* Ensure consistent spacing */
+}
 
-  .pg1-h1 {
-    color: #fff;
-    font-size: 13px;
-    letter-spacing: 5px;
-  }
+.pg1-h3 {
+  font-size: 15px; /* Adjust to match the desired alignment */
+  letter-spacing: 3px;
+}
+
+.pg1-h1 {
+  font-size: 20px; /* Larger size for emphasis */
+  letter-spacing: 3px;
+}
   
 
   .pg1-2 {
