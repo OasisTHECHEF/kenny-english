@@ -457,9 +457,16 @@ h1.bee::after {
   transform: translateY(30px); /* Slightly down */
   animation: fadeInUp 1.5s ease-out forwards, colorPulse 3s infinite ease-in-out;
   animation-delay: 0.5s;
-  font-size: 24px;
-  color: #E0780E;
+  font-size: 24px; /* Base font size */
   font-weight: bold;
+  line-height: 1.5;
+  color: #fff; /* White text for contrast */
+  padding: 30px 20px; /* Add padding for spacing */
+  margin: 0; /* Remove margins to make it full width */
+  background: linear-gradient(90deg, #E0780E, #755B41); /* Gradient background */
+  width: 100%; /* Ensure full width */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add depth with shadow */
+  letter-spacing: 2px; /* Add spacing between letters */
 }
 
 @keyframes fadeInText {
@@ -470,6 +477,21 @@ h1.bee::after {
     opacity: 1;
   }
 }
+
+/* Heading within pg2-subtext */
+.pg2-subtext h2 {
+  font-size: 28px; /* Slightly larger heading */
+  text-transform: uppercase; /* Add emphasis */
+  margin-bottom: 10px;
+}
+
+/* Subtext within pg2-subtext */
+.pg2-subtext h3 {
+  font-size: 18px; /* Slightly smaller subtext */
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for subtle effect */
+}
+
 
 /* Keyframes for fade and slide-up effect */
 @keyframes fadeInUp {
@@ -1616,7 +1638,7 @@ main {
     position: relative;
     margin: 0 5%; /* Apply responsive margins */
     padding: 0;
-    margin-top: 30px; /* Reduce the margin to move it higher */
+    margin-top: 20px; /* Reduce the margin to move it higher */
     z-index: 2;
   }
   
