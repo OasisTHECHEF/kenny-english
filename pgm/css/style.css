@@ -1616,14 +1616,14 @@ main {
     position: relative;
     margin: 0 5%; /* Apply responsive margins */
     padding: 0;
-    margin-top: 50px; /* Reduce the margin to move it higher */
+    margin-top: 30px; /* Reduce the margin to move it higher */
     margin-left: 5px;
     z-index: 2;
   }
   
   .pg1-top-text h1 {
     color: #fff;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 3px;
   }
 
