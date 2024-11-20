@@ -246,7 +246,7 @@ section {
 .pg1-2-h1 {
   margin-bottom: 35px;
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   color: #E0780E;
 }
 
@@ -285,6 +285,7 @@ h1.bee::after {
 }
 
 .pg1-2text p {
+  font-size: 17px;
   opacity: 0;
   animation: fadeInText 1.5s ease forwards;
   font-weight: bold;
@@ -452,21 +453,17 @@ h1.bee::after {
 }
 
 .pg2-subtext {
+  position: relative;
   text-align: center;
-  opacity: 0; /* Hidden initially */
-  transform: translateY(30px); /* Slightly down */
-  animation: fadeInUp 1.5s ease-out forwards, colorPulse 3s infinite ease-in-out;
-  animation-delay: 0.5s;
-  font-size: 24px; /* Base font size */
+  font-size: 24px;
   font-weight: bold;
   line-height: 1.5;
-  color: #fff; /* White text for contrast */
-  padding: 30px 20px; /* Add padding for spacing */
-  margin: 0; /* Remove margins to make it full width */
+  color: #fff;
+  padding: 50px 20px; /* Adjust padding for content */
+  margin: 0;
+  width: 100%;
+  clip-path: polygon(10% 100%, 0% 0%, 100% 0%, 90% 100%);
   background: linear-gradient(90deg, #E0780E, #755B41); /* Gradient background */
-  width: 100%; /* Ensure full width */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add depth with shadow */
-  letter-spacing: 2px; /* Add spacing between letters */
 }
 
 @keyframes fadeInText {
@@ -487,7 +484,7 @@ h1.bee::after {
 
 /* Subtext within pg2-subtext */
 .pg2-subtext h3 {
-  font-size: 18px; /* Slightly smaller subtext */
+  font-size: 20px; /* Slightly smaller subtext */
   margin-top: 5px;
   color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for subtle effect */
 }
@@ -521,6 +518,12 @@ h1.bee::after {
 
 .pg2-points {
   text-align: center;
+}
+
+.pg2-points p {
+  font-size: 25px;
+  margin-top: 70px;
+  margin-bottom: 0;
 }
 
 .pg2-bottom-box {
@@ -1636,9 +1639,7 @@ main {
 
   .pg1-top-text {
     position: relative;
-    margin: 0 5%; /* Apply responsive margins */
-    padding: 0;
-    margin-top: 20px; /* Reduce the margin to move it higher */
+    margin-top: 350px;
     z-index: 2;
   }
   
@@ -1761,16 +1762,17 @@ main {
 }
 
 .pg2-subtext {
-  font-size: 20px;
-  animation: fadeInUp 1.2s ease-out forwards, colorPulse 3s infinite ease-in-out;
+  font-size: 18px; /* Slightly smaller font size for smaller screens */
+  padding: 30px 10px; /* Adjust padding for content */
+  clip-path: polygon(15% 100%, 0% 0%, 100% 0%, 85% 100%); /* Narrower shape for better fit */
 }
 
  .pg2-subtext h2 {
-    font-size: 22px;
+    font-size: 15px;
  }
  
  .pg2-subtext h3 {
-  font-size: 15px;
+  font-size: 11px;
 }
 
 .pg2-bottom-box {
