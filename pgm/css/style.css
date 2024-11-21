@@ -22,6 +22,7 @@
   color: #000;
   background: #fff;
   scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Matches the header height */
  }
 
  body {
@@ -46,8 +47,8 @@
 }
 
 section:target {
-  padding-top: 100px; /* Adjust this based on your header height */
-  margin-top: -100px;  /* Same value as padding-top */
+  padding-top: 100px; /* Ensure consistent spacing */
+  margin-top: 0; /* Prevent unintended shrinking */
 }
 
 .header-transparent {
@@ -182,11 +183,11 @@ section {
 
 /* ▼ Page One */
 .pg-1 {
-  height: 620px;
+  height: 100vh; /* Full viewport height */
   background-image: url("../../content/img/new_top.jpg");
-  width: 100%;
   background-position: center;
-  background-size: cover;
+  background-size: cover; /* Ensure the image covers the section fully */
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -360,7 +361,7 @@ h1.bee::after {
   text-align: center;
   border-radius: 30px;
   border: single 5px #E0780E;
-  margin-top: 270px;
+  margin-top: 200px;
   padding: 1px; /* Add padding to give some space around the content */
   animation: floatBox 3s ease-in-out infinite;
   transition: box-shadow 0.5s ease-in-out;
@@ -478,6 +479,7 @@ h1.bee::after {
 /* Heading within pg2-subtext */
 .pg2-subtext h2 {
   font-size: 28px; /* Slightly larger heading */
+  letter-spacing: 5px;
   text-transform: uppercase; /* Add emphasis */
   margin-bottom: 10px;
 }
@@ -485,6 +487,7 @@ h1.bee::after {
 /* Subtext within pg2-subtext */
 .pg2-subtext h3 {
   font-size: 20px; /* Slightly smaller subtext */
+  letter-spacing: 5px;
   margin-top: 5px;
   color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for subtle effect */
 }
