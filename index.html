@@ -32,7 +32,7 @@
 <body>
 <!-- Header -->
 <div class="top-area">
-    <header class="DownMove header-transparent" id="header">
+    <header class="header-transparent" id="header">
         <div class="logo" id="logo">
             <a href="#pg-1"><img src="content/img/pelogo_stransparent.png" width="70" height="70" alt="kennys_english"></a>
         </div>
@@ -378,17 +378,31 @@
           </div>
     </footer>
     <script>
-        $(document).ready(function () {
-            const header = $('#header');
+        document.addEventListener("DOMContentLoaded", () => {
+            const header = document.getElementById("header");
+            const pg1 = document.getElementById("pg-1");
     
-            $(window).on('scroll', function () {
-                // Check if the page has been scrolled past the pg-1 section
-                if ($(window).scrollTop() > $('#pg-1').height()) {
-                    header.removeClass('header-transparent').addClass('header-white');
-                } else {
-                    header.removeClass('header-white').addClass('header-transparent');
-                }
-            });
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        // When pg-1 is fully or partially visible, make the header transparent
+                        header.classList.add("header-transparent");
+                        header.classList.remove("header-white");
+    
+                        // Remove any blur effect (if any backdrop filter is used)
+                        header.style.backdropFilter = 'none';
+                    } else {
+                        // When pg-1 is not visible, make the header white
+                        header.classList.add("header-white");
+                        header.classList.remove("header-transparent");
+    
+                        // Restore blur effect when not transparent
+                        header.style.backdropFilter = 'blur(10px)';
+                    }
+                });
+            }, { threshold: 0.1 });  // Trigger when at least 10% of pg-1 is visible
+    
+            observer.observe(pg1);
         });
     </script>
 </body>

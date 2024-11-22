@@ -48,65 +48,34 @@
 
 section:target {
   padding-top: 100px; /* Ensure consistent spacing */
-  margin-top: 0; /* Prevent unintended shrinking */
+  margin-top: -100px; /* Prevent unintended shrinking */
 }
 
 .header-transparent {
-  background-color: transparent;
+  background-color: transparent !important;
   transition: background-color 0.3s ease;
 }
 
-/* White background header */
+/* When the header is not in the pg-1 section, make it white */
 .header-white {
-  background-color: white;
+  background-color: white !important;
   transition: background-color 0.3s ease;
-}
-
-
-
-/* Header Up & Down Movement */
-#header.Upmove {
-  animation: UpAnime 0.5s forwards;
-}
-
-@keyframes UpAnime {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-}
-
-#header.DownMove {
-  animation: DownAnime 0.5s forwards;
-}
-
-@keyframes DownAnime {
-  from {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* ▼ Extra Styling for Header List */
-nav ul li a{
+nav ul li a {
   display: block;
   text-decoration: none;
-  color: #666;
+  color: #070707;
+  font-weight: bold;
+  font-size: 15px;
   padding:10px;
   transition:all 0.3s;
 }
 
 nav ul li.current a,
 nav ul li a:hover,
-nav ul li a:active{
+nav ul li a:active {
   color:#E0780E; 
 }
 
@@ -408,14 +377,6 @@ h1.bee::after {
   display: block; /* Make sure the image displays as a block-level element */
   margin: 0 auto; /* Center the image */
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -1493,6 +1454,16 @@ main {
     margin-left: 5px;
   }
 
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 15px;
+    padding:10px;
+    transition:all 0.3s;
+  }
+
   .pc-nav {
     display: none;
   }
@@ -1619,10 +1590,6 @@ main {
   height: 70px;
   padding: 10px;
   justify-content: center;
-}
-
-.hd-h1 {
-  font-size: 16px;
 }
 
 .sp-lsn-btn {
@@ -2258,37 +2225,6 @@ main {
   list-style: none;
   margin-left: 20px;
 }
-
-/*
-.pg7-h1 {
-  font-size: 35px;
-}
-
-.pg7-bottom-box {
-width: 100%;
-flex-direction: column;
-padding: 10px;
-}
-
-.pg7-bottom-sub {
-height: 400px;
-text-align: center;
-margin: 10px;
-border-radius: 5px;
-background-color: #fff;
-border: double 5px #E0780E;
-}
-
-.pg7-box-p1 {
-width: 40%;
-text-align: center;
-margin: 0;
-padding: 0;
-color: #fff;
-background-color: #E0780E;
-}
-*/
-
 
   .pg-2, .pg-3, .pg-5, .pg-6 {
     height: auto;
