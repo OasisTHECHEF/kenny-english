@@ -182,6 +182,10 @@ section {
 
 
 /* ▼ Page One */
+#pg-1 {
+  scroll-margin-top: 0; /* Reset scroll margin specific to this section */
+}
+
 .pg-1 {
   height: 100vh; /* Full viewport height */
   background-image: url("../../content/img/new_top.jpg");
@@ -212,6 +216,7 @@ section {
 
 .pg1-top-text h1 {
   color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5); /* Horizontal, vertical, blur radius, color */
   font-size: 30px;
   letter-spacing: 6px;
 }
@@ -526,7 +531,11 @@ h1.bee::after {
 .pg2-points p {
   font-size: 25px;
   margin-top: 70px;
-  margin-bottom: 0;
+  margin-bottom: 5px; /* Reduce the bottom margin of the <p> tag */
+}
+
+.pg2-points h2 {
+  margin-top: 5px; /* Reduce the top margin of the <h2> tag */
 }
 
 .pg2-bottom-box {
