@@ -1637,8 +1637,8 @@ main {
   opacity: 1;
 }
 
-
 #header {
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
@@ -1660,7 +1660,7 @@ body.scrolled #header {
 }
 
 body.scrolled #header a {
-  color: black;
+  color: white;
 }
 
 .sp-lsn-btn {
