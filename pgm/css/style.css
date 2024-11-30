@@ -34,6 +34,13 @@
     background-color: #f5f5f5;
  }
 
+ .parkinsans-1 {
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 
 
 #header {
@@ -87,10 +94,8 @@ nav ul li a {
   transition:all 0.3s;
 }
 
-nav ul li.current a,
-nav ul li a:hover,
-nav ul li a:active {
-  color:#E0780E; 
+nav.pc-nav ul li a:hover {
+  transform: scale(1.1); /* Slightly enlarge the text */
 }
 
  a {
@@ -184,19 +189,15 @@ section {
   padding-top: 100px;
 }
 
-
-.pg-1 {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-image: url("../../content/img/new_top.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
+.pg-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity for darkness */
   z-index: 1;
-  margin-top: -100px;
-  padding-top: 100px;
 }
 
 .pg1-top-text {
@@ -1443,13 +1444,13 @@ body.scrolled #header {
 }
 
 #header a {
-  color: inherit;
+  color:  #E0780E;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 body.scrolled #header a {
-  color: black;
+  color:   #E0780E;
 }
 
 main {
@@ -2390,5 +2391,54 @@ body.scrolled #header a {
     justify-content: space-around;
   }
 }
+
+/* Loading Screen Styles */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#loading-logo {
+  width: 150px; /* Adjust logo size */
+  animation: pulse 1.5s infinite;
+}
+
+.loading-text {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #e0780e;
+  animation: fadeIn 1.5s infinite;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+  }
+}
+
+@keyframes fadeIn {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0.5;
+  }
+}
+
 
 /* Desktop (min-width: 901px) - already styled by default above */

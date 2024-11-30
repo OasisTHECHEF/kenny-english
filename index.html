@@ -8,6 +8,9 @@
 
     <title>Project English</title>
     <link rel="stylesheet" href="pgm/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
     <script src="pgm/js/script.js"></script>
 
     <!-- <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script> -->
@@ -30,6 +33,20 @@
 </head>
 
 <body>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <img src="pelogo_stransparent.png" alt="Loading Logo" id="loading-logo">
+        <p class="loading-text">Loading...</p>
+    </div>
+
+    <!-- Existing Content -->
+    <div class="top-area">
+        <header class="header-transparent" id="header">
+            <!-- Your existing header content -->
+        </header>
+    </div>
+
 <!-- Header -->
 <div class="top-area">
     <header class="header-transparent" id="header">
@@ -72,7 +89,7 @@
                 <h1>英会話のお悩み「解放」しませんか？</h1>
             </div>
             <div class="pg1-bottom-text">
-                <h3 class="pg1-h3">オンライン英会話</h3>
+                <h3 class="pg1-h3 parkinsans-1">オンライン英会話</h3>
                 <h1 class="pg1-h1"><span style="font-weight: bold;">Project English</span></h1>
             </div>
 
@@ -404,6 +421,13 @@
     
             observer.observe(pg1);
         });
+
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                document.getElementById("loading-screen").style.display = "none";
+            }, 3000);
+        });
+
     </script>
 </body>
 

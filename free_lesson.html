@@ -23,6 +23,20 @@
 </head>
 
 <body>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <img src="pelogo_stransparent.png" alt="Loading Logo" id="loading-logo">
+      <p class="loading-text">Loading...</p>
+  </div>
+
+  <!-- Existing Content -->
+  <div class="top-area">
+      <header class="header-transparent" id="header">
+          <!-- Your existing header content -->
+      </header>
+  </div>
+
 <!-- Header -->
 <div class="top-area">
   <header class="DownMove" id="header">
@@ -162,8 +176,13 @@
             </div>
           </div>
     </footer>
-
-
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                document.getElementById("loading-screen").style.display = "none";
+            }, 3000);
+        });
+    </script>
 </body>
 
 
