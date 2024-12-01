@@ -22,8 +22,13 @@
   color: #000;
   background: #fff;
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* Matches the header height */
+  scroll-padding-top: 55px; /* Matches the header height */
  }
+
+ section:target {
+  margin-top: -55px; /* Adjust the value to match your header height */
+  padding-top: 55px; /* Optional, ensures consistent spacing */
+}
 
  body {
     margin: 0;
@@ -68,8 +73,8 @@ body.scrolled #header a {
 }
 
 section:target {
-  padding-top: 100px; /* Ensure consistent spacing */
   margin-top: -100px; /* Prevent unintended shrinking */
+  padding-top: 100px; /* Ensure consistent spacing */
 }
 
 .header-transparent {
@@ -439,6 +444,13 @@ h1.bee::after {
 */
 
 /* ▼ Page Two */
+#pg-2 {
+  scroll-margin-top: -2px; /* Fine-tune alignment */
+  margin-top: 0;
+  padding-top: 0;
+  scroll-margin-top: calc(var(--header-height, 100px) - 5px); /* Adjust as needed */
+}
+
 .pg-2 {
   height: 900px;
   width: 100%;
@@ -1413,6 +1425,13 @@ hr {
 html {
   color: #000;
   background: #fff;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+section:target {
+  margin-top: -100px; /* Adjust the value to match your header height */
+  padding-top: 70px; /* Optional, ensures consistent spacing */
 }
 
 body {
@@ -1813,6 +1832,10 @@ body.scrolled #header a {
 
 
 /* Page2 Design for SP */
+
+#pg-2 {
+  scroll-margin-top: 50px; /* Adjust for mobile if needed */
+}
 
 .pg-2 {
   width: 100%;
