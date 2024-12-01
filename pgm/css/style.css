@@ -445,6 +445,9 @@ h1.bee::after {
 
 /* ▼ Page Two */
 #pg-2 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   scroll-margin-top: -2px; /* Fine-tune alignment */
   margin-top: 0;
   padding-top: 0;
@@ -463,12 +466,16 @@ h1.bee::after {
   font-weight: bold;
   line-height: 1.5;
   color: #fff;
-  padding: 50px 20px; /* Adjust padding for content */
-  margin: 0;
-  width: 100%;
-  clip-path: polygon(10% 100%, 0% 0%, 100% 0%, 90% 100%);
-  background: linear-gradient(90deg, #E0780E, #755B41); /* Gradient background */
+  padding: 50px 0; /* Only vertical padding */
+  margin: 0; /* Remove all default margins */
+  width: 100%; /* Ensure it spans the full parent width */
+  background: linear-gradient(to right, #E0780E, #755B41); /* Keep existing gradient */
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%); /* Shape remains sharp */
+  left: 0; /* Force alignment to the very left */
+  transform: translateX(-0.5px); /* Subpixel adjustment if browser rounding causes gaps */
 }
+
+
 
 @keyframes fadeInText {
   0% {
@@ -1844,7 +1851,8 @@ body.scrolled #header a {
 .pg2-subtext {
   font-size: 18px; /* Slightly smaller font size for smaller screens */
   padding: 30px 10px; /* Adjust padding for content */
-  clip-path: polygon(15% 100%, 0% 0%, 100% 0%, 85% 100%); /* Narrower shape for better fit */
+  background: linear-gradient(to right, #E0780E, #755B41); /* Keep existing gradient */
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%); /* Creates the shape */
 }
 
  .pg2-subtext h2 {
