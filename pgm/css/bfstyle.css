@@ -676,14 +676,6 @@ h1.bee::after {
 
 .slide-in {
   animation: slideInAnimation 1.5s ease-in-out forwards;
-  opacity: 0;
-  transform: translateX(-50%);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.slide-in.visible {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 @keyframes fadeInAnimation {
@@ -2599,14 +2591,3 @@ body.scrolled #header a {
 
 
 /* Desktop (min-width: 901px) - already styled by default above */
-/* Scroll Animation Styles */
-.animated {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.animated.visible {
-    opacity: 1;
-    transform: translateY(0);
-}

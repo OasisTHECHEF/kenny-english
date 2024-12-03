@@ -41,7 +41,61 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const animatedElements = document.querySelectorAll('.animated');
 
+  const observer = new IntersectionObserver(
+      (entries) => {
+          entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+              } else {
+                  entry.target.classList.remove('visible');
+              }
+          });
+      },
+      {
+          threshold: 0.1,
+      }
+  );
+
+  animatedElements.forEach((el) => observer.observe(el));
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const pg3Section = document.querySelector('.pg-3');
+  if (!pg3Section) {
+      console.error('pg-3 section not found');
+      return;
+  }
+
+  const slideInElements = pg3Section.querySelectorAll('.slide-in');
+  if (slideInElements.length === 0) {
+      console.error('No slide-in elements found in pg-3 section');
+      return;
+  }
+
+  const observer = new IntersectionObserver(
+      (entries) => {
+          entries.forEach((entry) => {
+              console.log('Element observed:', entry.target, 'Is intersecting:', entry.isIntersecting);
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+              } else {
+                  entry.target.classList.remove('visible');
+              }
+          });
+      },
+      {
+          threshold: 0.2,
+      }
+  );
+
+  slideInElements.forEach((el) => observer.observe(el));
+});
 
 
 
