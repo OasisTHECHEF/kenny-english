@@ -22,6 +22,7 @@
   color: #000;
   background: #fff;
   scroll-behavior: smooth;
+  overflow-x: hidden;
   scroll-padding-top: 55px; /* Matches the header height */
  }
 
@@ -1009,6 +1010,10 @@ h1.bee::after {
 
 .pg5-top-box {
   line-height: 1px;
+}
+
+.pg5-top-box p {
+  font-size: 20px;
 }
 
 .pg5-mid-box {
@@ -2406,7 +2411,7 @@ body.scrolled #header a {
 
 .footer_navi {
   order: 1;
-  display: grid;
+  display: none; /* Hidden until new idea */
   grid-template-columns: repeat(3, 1fr); /* Two rows with three items each */
   gap: 10px; /* Spacing between items */
   justify-content: center;
