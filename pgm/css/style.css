@@ -1388,17 +1388,85 @@ hr {
   font-size: 15px;
   color: #4b5564;
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align everything horizontally */
+  gap: 1.5rem; /* Add spacing between sections */
+}
+
+.footer .grid {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Align vertically */
+  flex-wrap: wrap; /* Allow items to wrap if needed */
+  gap: 20; /* Add spacing between navigation and other elements */
 }
 
 .footer_navi {
-  display: block;
+  display: flex; /* Arrange navigation items horizontally */
+  justify-content: center; /* Center align navigation links */
+  align-items: center;/* Vertically align the links */
+  list-style: none; /* Remove bullet points */
+  flex-wrap: nowrap; /* Prevent items from wrapping */
+  padding: 0; /* Reset padding */
+  margin: 0; /* Reset margin */
+  gap: 30px; /* Add spacing between links */
+  white-space: nowrap;
 }
 
 .footer_navi li {
-  margin-bottom: 0.75rem;
+        margin: 0;
+    }
+
+.footer_navi a {
+  text-decoration: none; /* Remove underline */
+  color: #000; /* Set link color */
+  font-weight: bold; /* Bold text */
+  font-size: 16px; /* Adjust font size */
+  transition: color 0.3s ease;
+}
+
+.footer_navi a:hover {
+  color: #E0780E;
+}
+
+.ft-h1 {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Allow the logo to span full width */
+  margin-bottom: 10px;
+}
+
+.ft-h1 img {
+  margin-bottom: 30px;
+  margin-left: auto; /* Push the logo to the center */
+  margin-right: auto;/* Keep the logo centered */
+  display: block;
+}
+
+/* Copyright and Social Media Section */
+.footer .grid {
+  display: flex;
+  justify-content: space-between; /* Space out copyright and social links */
+  align-items: center; /* Vertically align the content */
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Restrict to a reasonable width */
+}
+
+.footer_social {
+  margin-top: 10px;
+  margin-left: 60px;
+  display: flex;
+  gap: 16px; /* Add spacing between social icons */
+}
+
+.footer_social a:hover {
+  opacity: 1; /* Highlight icons on hover */
 }
 
 .footer_social a {
+  transition: opacity 0.3s ease;
   display: inline-block;
   width: 24px;
   opacity: 0.7;
@@ -2328,14 +2396,59 @@ body.scrolled #header a {
   background-color: #E0780E;
 }
 
-.footer_navi ul {
+
+.footer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer_navi {
+  order: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Two rows with three items each */
+  gap: 10px; /* Spacing between items */
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 10px 0;
 }
 
 .footer_navi li {
-  list-style: none;
-  margin-left: 20px;
+  list-style: none; /* Remove bullet points */
 }
+
+.footer_navi a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer_navi a:hover {
+  color: #E0780E; /* Highlight color on hover */
+}
+
+.ft-h1 {
+  order: 2; /* Position the logo below the navigation */
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.ft-h1 img {
+  margin: 0 auto;
+  display: block;
+}
+
+.footer_social {
+  margin-left: 100px;
+}
+
+
+
 
   .pg-2, .pg-3, .pg-5, .pg-6 {
     height: auto;
@@ -2439,7 +2552,7 @@ body.scrolled #header a {
 }
 
 #loading-logo {
-  width: 150px; /* Adjust logo size */
+  width: 90px; /* Adjust logo size */
   animation: pulse 1.5s infinite;
 }
 
