@@ -2187,6 +2187,7 @@ body.scrolled #header a {
 .student-voice p {
   font-size: 16px;
   color: #333;
+  text-align: justify;
 }
 
 .student-voice img {
