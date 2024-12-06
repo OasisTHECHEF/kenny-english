@@ -619,7 +619,11 @@ h1.bee::after {
   color: #E0780E;  
 }
 
-
+.pg2-box-text2 {
+  padding: 0 30px; /* Adds space on both sides */
+  text-align: justify; /* Aligns the text perfectly */
+  line-height: 1.5; /* Improves readability */
+}
 
 /* ▼ Page Three */
 .pg-3 {
