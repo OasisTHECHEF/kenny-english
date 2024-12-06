@@ -47,6 +47,13 @@
   font-style: normal;
 }
 
+.m-plus-2-jp {
+  font-family: "M PLUS 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 
 
 #header {
@@ -111,7 +118,7 @@ nav.pc-nav ul li a:hover {
  }
 
  .lsn-btn {
-  background: linear-gradient(#FFD600, #ffc400, #E0780E, #e06c0e, #e0620e);
+  background: linear-gradient(to right, #E0780E, #F08A45, #FFC400, #FFD600);
   color: #fff;
   padding: 15px 25px;
   border-radius: 6px;
@@ -231,15 +238,17 @@ section {
 
 .pg1-h1 {
   color: #fff;
-  margin-right: 200px;
-  font-size: 30px;
+  margin-right: 100px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+  font-size: 50px;
   letter-spacing: 10px;
 }
 
 .pg1-h3 {
   color: #fff;
-  margin-right: 250px;
-  font-size: 20px;
+  margin-right: 200px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+  font-size: 30px;
   letter-spacing: 10px;
 }
 
@@ -1022,6 +1031,7 @@ h1.bee::after {
 }
 
 .pg5-top-box p {
+  font-weight: bold;
   font-size: 20px;
 }
 
@@ -1804,7 +1814,14 @@ body.scrolled #header a {
 
   .pg1-top-text {
     position: relative;
-    margin-top: 350px;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center align the elements horizontally */
+    margin: 0 auto;
+    padding: 0;
+    width: 90%; /* Responsive width */
+    text-align: center;
+    margin-top: 300px;
     z-index: 2;
   }
   
@@ -1833,6 +1850,7 @@ body.scrolled #header a {
 
 .pg1-h3 {
   font-size: 15px; /* Adjust to match the desired alignment */
+  margin-bottom: 5px;
   letter-spacing: 3px;
 }
 
@@ -2224,7 +2242,8 @@ body.scrolled #header a {
 }
 
 .pg5-top-box p {
-  font-size: 13px;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .pg5-mid-box {
