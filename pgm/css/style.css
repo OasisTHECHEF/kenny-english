@@ -210,7 +210,7 @@ section {
   position: relative;
   text-align: right;
   margin-top: 170px;
-  margin-right: 60px;
+  margin-right: 135px;
   z-index: 2;
 }
 
@@ -224,7 +224,8 @@ section {
 .pg1-bottom-text {
   line-height: 15px;
   position: relative; /* Change from relative to absolute for precise control */
-  text-align: right; /* Align text to the left */
+  text-align: right;
+  margin-right: 70px;
   z-index: 2;
 }
 
@@ -1990,6 +1991,12 @@ body.scrolled #header a {
   color: #E0780E;  
 }
 
+.pg2-box-text2 {
+  padding: 0 20px; /* Adds space on both sides */
+  text-align: justify; /* Aligns the text perfectly */
+  line-height: 1.5; /* Improves readability */
+}
+
 
 /* Page3 Design for SP */
 .pg-3 {
@@ -2022,6 +2029,10 @@ body.scrolled #header a {
   font-size: 16px;
 }
 
+.pg3-up-p br {
+  display: none;
+}
+
 .pg3-down-container {
   display: flex;
   flex-direction: column;
@@ -2037,6 +2048,10 @@ body.scrolled #header a {
 
 .pg3-down-h3 {
   font-size: 16px;
+}
+
+.pg3-down-p br {
+  display: none;
 }
 
 /* Page4 Design for SP */
