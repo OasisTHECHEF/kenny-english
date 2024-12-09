@@ -213,6 +213,14 @@ section {
   z-index: 1;
 }
 
+.pg1-top-text, .pg1-bottom-text {
+  position: absolute; /* Relative to the container */
+
+  top: 10%; /* Adjust top position */
+  transform: translateY(-50%);
+  text-align: right;
+}
+
 .pg1-top-text {
   position: relative;
   text-align: right;
@@ -1545,6 +1553,7 @@ body {
   background-color: #f5f5f5;
 }
 
+
 /* Default for PCs (min-width: 901px) */
 
 #header {
@@ -1814,6 +1823,11 @@ body.scrolled #header a {
   z-index: 1;
   margin-top: -100px;
   padding-top: 100px;
+}
+
+.pg1-top-text, .pg1-bottom-text {
+  text-align: center; /* Center align on small screens */
+  margin-right: 0; /* Remove excessive margins */
 }
 
   .pg1-top-text {
@@ -2394,7 +2408,7 @@ body.scrolled #header a {
 
 .pgFL-top-box p {
   font-size: 13px;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 
