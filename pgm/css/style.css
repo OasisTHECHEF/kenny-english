@@ -23,12 +23,12 @@
   background: #fff;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  scroll-padding-top: 55px; /* Matches the header height */
+  scroll-padding-top: 70px; /* Matches the header height */
  }
 
  section:target {
-  margin-top: -55px; /* Adjust the value to match your header height */
-  padding-top: 55px; /* Optional, ensures consistent spacing */
+  margin-top: -70px; /* Adjust the value to match your header height */
+  padding-top: 70px; /* Optional, ensures consistent spacing */
 }
 
  body {
@@ -1536,11 +1536,11 @@ html {
   color: #000;
   background: #fff;
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 70px;
 }
 
 section:target {
-  margin-top: -100px; /* Adjust the value to match your header height */
+  margin-top: -70px; /* Adjust the value to match your header height */
   padding-top: 70px; /* Optional, ensures consistent spacing */
 }
 
