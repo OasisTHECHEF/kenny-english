@@ -2268,6 +2268,7 @@ body.scrolled #header a {
 }
 
 .pg5-top-box p {
+  margin-bottom: 0;
   font-weight: bold;
   font-size: 11px;
 }
