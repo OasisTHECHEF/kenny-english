@@ -1839,13 +1839,13 @@ body.scrolled #header a {
     padding: 0;
     width: 90%; /* Responsive width */
     text-align: center;
-    margin-top: 250px;
+    margin-top: 240px;
     z-index: 2;
   }
   
   .pg1-top-text h1 {
     color: #fff;
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 3px;
   }
 
@@ -1867,13 +1867,13 @@ body.scrolled #header a {
 }
 
 .pg1-h3 {
-  font-size: 15px; /* Adjust to match the desired alignment */
+  font-size: 16px; /* Adjust to match the desired alignment */
   margin-bottom: 5px;
   letter-spacing: 3px;
 }
 
 .pg1-h1 {
-  font-size: 17px; /* Larger size for emphasis */
+  font-size: 18px; /* Larger size for emphasis */
   letter-spacing: 3px;
 }
   
@@ -2408,7 +2408,7 @@ body.scrolled #header a {
 
 .pgFL-top-box p {
   font-size: 13px;
-  padding: 0 20px;
+  padding: 0 8px;
 }
 
 
