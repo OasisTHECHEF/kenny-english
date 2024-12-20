@@ -10,35 +10,62 @@ window.addEventListener("scroll", function () {
 });
 
 
+// Anchor Links
 document.addEventListener("DOMContentLoaded", function () {
-  const links = document.querySelectorAll('a[href^="#"]'); // Select all anchor links
-  const header = document.getElementById("header"); // Fixed header
+  const header = document.getElementById("header");
 
-  links.forEach(link => {
-      link.addEventListener("click", function (e) {
-          e.preventDefault(); // Prevent default jump
+  // Function to get the exact height of the fixed header
+  function getHeaderHeight() {
+    return header ? header.offsetHeight : 0;
+  }
 
-          const targetId = this.getAttribute("href").substring(1);
-          const targetElement = document.getElementById(targetId);
+  // Function to scroll to a target element with proper alignment
+  function scrollToTarget(targetId) {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const headerHeight = getHeaderHeight();
+      const computedStyle = window.getComputedStyle(targetElement);
+      const marginTop = parseInt(computedStyle.marginTop) || 0; // Adjust for CSS margin
+      const targetPosition = targetElement.offsetTop - headerHeight - marginTop;
 
-          if (targetElement) {
-              const headerHeight = header.offsetHeight || 0;
-
-              // Fine-tuned adjustment for #pg-2
-              const additionalOffset = targetId === "pg-2" ? 2 : 0; // Adjust incrementally
-
-              const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-              const offsetPosition = elementPosition - headerHeight - additionalOffset;
-
-              // Smooth scroll to calculated position
-              window.scrollTo({
-                  top: offsetPosition,
-                  behavior: "smooth",
-              });
-          }
+      // Scroll to the calculated position
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth", // Use smooth scrolling
       });
+    }
+  }
+
+  // Add event listeners to anchor links
+  document.querySelectorAll('a[href*="#"]').forEach((link) => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+      const [targetPage, targetId] = href.split("#");
+
+      if (targetId) {
+        e.preventDefault(); // Prevent default jump
+
+        if (!targetPage || targetPage === window.location.pathname.split("/").pop()) {
+          // Same-page navigation
+          history.pushState(null, null, `#${targetId}`);
+          scrollToTarget(targetId);
+        } else {
+          // Cross-page navigation
+          window.location.href = `${targetPage}#${targetId}`;
+        }
+      }
+    });
   });
+
+  // Scroll to target on page load if a hash is present
+  if (window.location.hash) {
+    const targetId = window.location.hash.substring(1);
+    setTimeout(() => {
+      scrollToTarget(targetId);
+    }, 50); // Slight delay for rendering
+  }
 });
+
 
 
 document.addEventListener("DOMContentLoaded", function () {

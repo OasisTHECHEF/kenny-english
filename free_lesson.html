@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kenny's English</title>
+    <title>Project English</title>
     <link rel="stylesheet" href="pgm/css/style.css">
-    <script src="pgm/js/script.js"></script>
+    <script src="pgm/js/script.js" defer></script>
 
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script>
@@ -177,6 +177,33 @@
           </div>
     </footer>
     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const header = document.getElementById("header");
+            const pg1 = document.getElementById("pg-1");
+    
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        // When pg-1 is fully or partially visible, make the header transparent
+                        header.classList.add("header-transparent");
+                        header.classList.remove("header-white");
+    
+                        // Remove any blur effect (if any backdrop filter is used)
+                        header.style.backdropFilter = 'none';
+                    } else {
+                        // When pg-1 is not visible, make the header white
+                        header.classList.add("header-white");
+                        header.classList.remove("header-transparent");
+    
+                        // Restore blur effect when not transparent
+                        header.style.backdropFilter = 'blur(10px)';
+                    }
+                });
+            }, { threshold: 0.1 });  // Trigger when at least 10% of pg-1 is visible
+    
+            observer.observe(pg1);
+        });
+
         window.addEventListener("load", function () {
             setTimeout(() => {
                 document.getElementById("loading-screen").style.display = "none";
