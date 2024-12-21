@@ -1296,7 +1296,7 @@ h1.bee::after {
 
 /* ▼ Page Seven */
 .pg-7 {
-  height: 2400px;
+  height: 2200px;
   width: 100%;
 }
 
@@ -2443,7 +2443,7 @@ body.scrolled #header a {
 
 /* Page7 Design for SP */
 .pg-7 {
-  height: 2400px;
+  height: 2200px;
   width: 100%;
 }
 
@@ -2561,7 +2561,7 @@ body.scrolled #header a {
 }
 
 /* Responsive for Tablets (601px to 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
+@media (min-width: 768px) and (max-width: 1000px) {
 
 #header {
   position: fixed;
