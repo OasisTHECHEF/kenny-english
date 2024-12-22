@@ -1296,7 +1296,7 @@ h1.bee::after {
 
 /* ▼ Page Seven */
 .pg-7 {
-  height: 2100px;
+  height: 2400px;
   width: 100%;
 }
 
@@ -1975,6 +1975,7 @@ body.scrolled #header a {
 
 #pg-2 {
   scroll-margin-top: 50px; /* Adjust for mobile if needed */
+  margin-bottom: 0;
 }
 
 .pg-2 {
@@ -2050,6 +2051,10 @@ body.scrolled #header a {
 
 
 /* Page3 Design for SP */
+#pg-3 {
+  margin-top: 0;
+}
+
 .pg-3 {
   height: 750px;
   width: 100%;
@@ -2443,7 +2448,7 @@ body.scrolled #header a {
 
 /* Page7 Design for SP */
 .pg-7 {
-  height: 2100px;
+  height: 2400px;
   width: 100%;
 }
 
@@ -2561,7 +2566,9 @@ body.scrolled #header a {
 }
 
 /* Responsive for Tablets (601px to 900px) */
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 601px) and (max-width: 900px) {
+
+
 
 #header {
   position: fixed;
@@ -2611,6 +2618,7 @@ body.scrolled #header a {
   margin-top: -100px;
   padding-top: 100px;
 }
+
 
   .pg2-bottom-sub {
     width: 45%;
