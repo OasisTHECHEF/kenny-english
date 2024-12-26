@@ -226,7 +226,7 @@ section {
   position: relative;
   text-align: left;
   margin-top: 170px;
-  margin-left: 200px;
+  margin-left: 180px;
   z-index: 2;
 }
 
@@ -241,7 +241,7 @@ section {
   line-height: 15px;
   position: relative; /* Change from relative to absolute for precise control */
   text-align: left;
-  margin-left: 220px;
+  margin-left: 200px;
   z-index: 2;
 }
 
@@ -952,6 +952,7 @@ h1.bee::after {
 .student-voice p {
   font-size: 16px;
   color: #333;
+  text-align: justify;
 }
 
 .student-voice img {
@@ -1853,14 +1854,14 @@ body.scrolled #header a {
     padding: 0;
     width: 90%; /* Responsive width */
     text-align: center;
-    margin-top: 220px;
+    margin-top: 180px;
     z-index: 2;
   }
   
   .pg1-top-text h1 {
     color: #fff;
-    font-size: 17px;
-    letter-spacing: 3px;
+    font-size: 15px;
+    letter-spacing: 1px;
   }
 
   .pg1-bottom-text {
