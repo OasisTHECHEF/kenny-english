@@ -226,7 +226,7 @@ section {
   position: relative;
   text-align: left;
   margin-top: 170px;
-  margin-left: 230px;
+  margin-left: 200px;
   z-index: 2;
 }
 
@@ -241,7 +241,7 @@ section {
   line-height: 15px;
   position: relative; /* Change from relative to absolute for precise control */
   text-align: left;
-  margin-left: 240px;
+  margin-left: 220px;
   z-index: 2;
 }
 
@@ -1295,7 +1295,7 @@ h1.bee::after {
 
 /* ▼ Page Seven */
 .pg-7 {
-  height: 2400px;
+  height: 2200px;
   width: 100%;
 }
 
@@ -3594,7 +3594,7 @@ body.scrolled #header a {
 
 .pg7-bottom-sub {
   flex: 1;
-  height: 330px;
+  height: auto;
   text-align: center;
   margin: 10px;
   border-radius: 5px;
