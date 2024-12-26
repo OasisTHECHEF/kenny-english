@@ -1840,20 +1840,17 @@ body.scrolled #header a {
   padding-top: 100px;
 }
 
-.pg1-top-text, .pg1-bottom-text {
-  text-align: center; /* Center align on small screens */
-  margin-right: 0; /* Remove excessive margins */
-}
+
 
   .pg1-top-text {
     position: relative;
     display: flex;
     flex-direction: column; /* Align items vertically */
-    align-items: center; /* Center align the elements horizontally */
+    align-items: left; /* Center align the elements horizontally */
     margin: 0 auto;
     padding: 0;
     width: 90%; /* Responsive width */
-    text-align: center;
+    text-align: left;
     margin-top: 180px;
     z-index: 2;
   }
@@ -1867,11 +1864,12 @@ body.scrolled #header a {
   .pg1-bottom-text {
     display: flex; /* Use flexbox for alignment */
     flex-direction: column; /* Align items vertically */
-    align-items: center; /* Center align the elements horizontally */
+    align-items: left; /* Center align the elements horizontally */
     margin: 0 auto;
     padding: 0;
     width: 90%; /* Responsive width */
-    text-align: center;
+    margin-left: 50px;
+    text-align: left;
 }
 
 .pg1-h3,
@@ -1884,6 +1882,7 @@ body.scrolled #header a {
 .pg1-h3 {
   font-size: 16px; /* Adjust to match the desired alignment */
   margin-bottom: 5px;
+  margin-left: 20px;
   letter-spacing: 3px;
 }
 
@@ -2448,7 +2447,7 @@ body.scrolled #header a {
 
 /* Page7 Design for SP */
 .pg-7 {
-  height: 2400px;
+  height: 2200px;
   width: 100%;
 }
 
