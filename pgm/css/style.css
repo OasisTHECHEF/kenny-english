@@ -2419,7 +2419,7 @@ body.scrolled #header a {
 .pg7-bottom-sub {
   flex: 1;
   height: auto;
-  width: 115px;
+  width: 110px;
   text-align: center;
   border-radius: 5px;
   background-color: #fff;
@@ -2436,6 +2436,8 @@ body.scrolled #header a {
 
 .pg7-box-text {
   font-size: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .pg7-box-p1 {
