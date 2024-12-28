@@ -1813,7 +1813,7 @@ body.scrolled #header a {
   
   .pg1-top-text h1 {
     color: #fff;
-    font-size: 15px;
+    font-size: 17px;
     letter-spacing: 1px;
   }
 
@@ -1824,7 +1824,7 @@ body.scrolled #header a {
     margin: 0 auto;
     padding: 0;
     width: 90%; /* Responsive width */
-    margin-left: 50px;
+    margin-left: 60px;
     text-align: left;
 }
 
@@ -1836,14 +1836,14 @@ body.scrolled #header a {
 }
 
 .pg1-h3 {
-  font-size: 16px; /* Adjust to match the desired alignment */
+  font-size: 17px; /* Adjust to match the desired alignment */
   margin-bottom: 5px;
   margin-left: 20px;
   letter-spacing: 3px;
 }
 
 .pg1-h1 {
-  font-size: 18px; /* Larger size for emphasis */
+  font-size: 19px; /* Larger size for emphasis */
   letter-spacing: 3px;
 }
   
@@ -2414,7 +2414,7 @@ body.scrolled #header a {
 
 .pg7-bottom-sub {
   height: auto;
-  width: 110px;
+  width: 100px;
   border-radius: 5px;
   background-color: #fff;
   border: solid 3px #E0780E;
@@ -2431,8 +2431,6 @@ body.scrolled #header a {
 
 .pg7-box-text {
   font-size: 9px;
-  padding-left: 3px;
-  padding-right: 3px;
   margin-top: 0;
 }
 
