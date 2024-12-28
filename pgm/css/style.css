@@ -1362,6 +1362,7 @@ h1.bee::after {
   font-size: 22px;
   color: #fff;
   text-align: center;
+  border-radius: 20px;
   background-color: #E0780E;
 }
 
