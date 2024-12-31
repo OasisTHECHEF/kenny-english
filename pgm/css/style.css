@@ -2520,7 +2520,7 @@ body.scrolled #header a {
 
 
 
-/* Responsive for Tablets (601px to 900px) */
+/* Responsive for Tablets (768px to 1280px) */
 @media (min-width: 768px) and (max-width: 1280px) {
 
   body {
@@ -3074,7 +3074,7 @@ body.scrolled #header a {
       max-width: calc(25% - 10px); /* Limits maximum width to 25% */
       margin-bottom: 20px; /* Add spacing between boxes */
       padding: 10px;
-      height: 600px; /* Adjust the height to content size */
+      height: 650px; /* Adjust the height to content size */
       border: double 5px #E0780E; /* Ensure border is shown */
       box-sizing: border-box; /* Include padding and borders in element's total width/height */
     }
@@ -3536,7 +3536,7 @@ body.scrolled #header a {
 
 /* ▼ Page Seven Design for Tablet */
 .pg-7 {
-  height: 2100px;
+  height: 2500px;
   width: 100%;
 }
 
