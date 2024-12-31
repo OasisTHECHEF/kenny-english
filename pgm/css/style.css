@@ -771,7 +771,7 @@ h1.bee::after {
 
 /* ▼ Page Four */
 .pg-4 {
-  height: 850px;
+  height: 750px;
   width: 100%;
 }
 
@@ -3065,7 +3065,7 @@ body.scrolled #header a {
 
 /* Page4 Design for Tablet */
 .pg-4 {
-  height: 1000px;
+  height: auto;
   width: 100%;
   padding: 10px; /* Reduce overall padding */
 }
@@ -3554,7 +3554,7 @@ body.scrolled #header a {
 
 /* ▼ Page Seven Design for Tablet */
 .pg-7 {
-  height: 2500px;
+  height: 2200px;
   width: 100%;
 }
 
@@ -3643,7 +3643,7 @@ body.scrolled #header a {
 
 
 /* Responsive for iPad Air and iPad mini */
-@media (min-width: 600px) and (max-width: 820px) {
+@media (min-width: 600px) and (max-width: 860px) {
 
   body {
     margin: 0;
@@ -4242,7 +4242,7 @@ body.scrolled #header a {
 
 /* Page4 Design for iPad Air and iPad mini */
 .pg-4 {
-  height: 900px;
+  height: auto;
   width: 100%;
   padding: 10px;
 }
@@ -4734,7 +4734,7 @@ body.scrolled #header a {
 
 /* ▼ Page Seven Design for iPad Air and iPad mini */
 .pg-7 {
-  height: 3000px;
+  height: 2100px;
   width: 100%;
 }
 

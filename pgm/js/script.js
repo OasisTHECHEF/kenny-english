@@ -1,4 +1,3 @@
-
 // Add or remove 'scrolled' class based on scroll position
 window.addEventListener("scroll", function () {
   const body = document.querySelector("body");
