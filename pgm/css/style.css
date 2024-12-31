@@ -121,6 +121,7 @@ nav.pc-nav ul li a:hover {
 
  .lsn-btn {
   background: linear-gradient(to right, #E0780E, #F08A45, #FFC400, #FFD600);
+  font-weight: bold;
   color: #fff;
   padding: 15px 25px;
   border-radius: 6px;
@@ -628,6 +629,7 @@ h1.bee::after {
 
 .pg2-box-text {
   font-size: 25px;
+  font-weight: bold;
   color: #E0780E;  
 }
 
@@ -660,6 +662,10 @@ h1.bee::after {
   margin: 20px;
 }
 
+.pg3-up-sub img {
+  border: solid 3px #E0780E;
+}
+
 .pg3-up-h3 {
   display: inline-block;
   font-size: 25px;
@@ -681,6 +687,10 @@ h1.bee::after {
 
 .pg3-down-sub {
   margin: 20px;
+}
+
+.pg3-down-sub img {
+  border: solid 3px #E0780E;
 }
 
 .pg3-down-h3 {
@@ -778,6 +788,7 @@ h1.bee::after {
 }
 
 .pg4-top-sub {
+  color: #fff;
   flex: 1;
   text-align: center;
   padding: 5px;
@@ -1808,7 +1819,7 @@ body.scrolled #header a {
     padding: 0;
     width: 90%; /* Responsive width */
     text-align: left;
-    margin-top: 100px;
+    margin-top: 120px;
     z-index: 2;
   }
   
@@ -4792,8 +4803,6 @@ body.scrolled #header a {
   text-align: center;
   font-size: 40px;
 }
-
-
 
 
 /* Footer Design for iPad Air and iPad mini */
