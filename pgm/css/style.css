@@ -1808,7 +1808,7 @@ body.scrolled #header a {
     padding: 0;
     width: 90%; /* Responsive width */
     text-align: left;
-    margin-top: 80px;
+    margin-top: 100px;
     z-index: 2;
   }
   
@@ -2933,7 +2933,11 @@ body.scrolled #header a {
 }
 
 .pg3-up-sub {
-  margin: 20px;
+  margin: 10px;
+}
+
+.pg3-up-sub img {
+  border: solid 3px #E0780E;
 }
 
 .pg3-up-h3 {
@@ -2960,7 +2964,11 @@ body.scrolled #header a {
 }
 
 .pg3-down-sub {
-  margin: 20px;
+  margin: 1px;
+}
+
+.pg3-down-sub img {
+  border: solid 3px #E0780E;
 }
 
 .pg3-down-h3 {
@@ -3045,88 +3053,87 @@ body.scrolled #header a {
 
 
 /* Page4 Design for Tablet */
-    /* Page 4 - General adjustments for mobile */
-    .pg-4 {
-      height: 900px;
-      width: 100%;
-      padding: 10px; /* Reduce overall padding */
-    }
+.pg-4 {
+  height: 1000px;
+  width: 100%;
+  padding: 10px; /* Reduce overall padding */
+}
   
-    .pg4-h1 {
-      font-size: 24px; /* Adjust heading size */
-      text-align: center;
-    }
-  
-    /* Flexbox column layout for small screens */
-    .pg4-bottom-box {
-      display: flex;
-      justify-content: space-between; /* Ensures equal spacing between elements */
-      gap: 10px; /* Adds space between the cards */
-      align-items: stretch;
-      flex-direction: column; /* Stack the boxes vertically */
-      align-items: center;
-      width: 100%; /* Ensure the boxes take full width */
-    }
-  
-    .pg4-bottom-sub {
-      flex: 1;
-      min-height: 450px;
-      max-width: calc(25% - 10px); /* Limits maximum width to 25% */
-      margin-bottom: 20px; /* Add spacing between boxes */
-      padding: 10px;
-      height: 650px; /* Adjust the height to content size */
-      border: double 5px #E0780E; /* Ensure border is shown */
-      box-sizing: border-box; /* Include padding and borders in element's total width/height */
-    }
+.pg4-h1 {
+  font-size: 24px; /* Adjust heading size */
+  text-align: center;
+}
+/* Flexbox column layout for small screens */
+.pg4-bottom-box {
+  display: flex;
+  justify-content: space-between; /* Ensures equal spacing between elements */
+  gap: 10px; /* Adds space between the cards */
+  align-items: stretch;
+  flex-direction: column; /* Stack the boxes vertically */
+  align-items: center;
+  width: 100%; /* Ensure the boxes take full width */
+}
+.pg4-bottom-sub {
+  flex: 1;
+  min-height: 450px;
+  max-width: calc(25% - 10px); /* Limits maximum width to 25% */
+  margin-bottom: 15px; /* Add spacing between boxes */
+  padding: 10px;
+  height: 600px; /* Adjust the height to content size */
+  border: double 5px #E0780E; /* Ensure border is shown */
+  box-sizing: border-box; /* Include padding and borders in element's total width/height */
+}
 
-    .pg4-bottom-sub p {
-      text-align: left !important;
-    }
-  
-    .pg4-card {
-      width: 100%;
-      height: auto;
-      transform: none; /* Disable the 3D flip transform */
-      display: flex;
-      flex-direction: column;
-      position: relative;
-  }
+.pg4-bottom-sub p {
+  text-align: left !important;
+}
 
-  .pg4-card-front,
-  .pg4-card-back {
-      width: 100%;
-      height: auto;
-      position: static; /* Remove positioning that causes reversing */
-      transform: none; /* Prevent rotation */
-      backface-visibility: visible; /* Ensure both sides are visible */
-      padding: 10px;
-      box-sizing: border-box;
-  }
+.pg4-card {
+  width: 100%;
+  height: auto;
+  transform: none; /* Disable the 3D flip transform */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 
-  .pg4-card-back {
-      background-color: #f8f8f8; /* Provide a different background to distinguish it from the front */
-      color: #000; /* Adjust text color for readability */
-      margin-top: 10px; /* Add spacing between the front and back content */
-  }
+.pg4-card-front,
+.pg4-card-back {
+    width: 100%;
+    height: auto;
+    position: static; /* Remove positioning that causes reversing */
+    transform: none; /* Prevent rotation */
+    backface-visibility: visible; /* Ensure both sides are visible */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.pg4-card-back {
+    background-color: #f8f8f8; /* Provide a different background to distinguish it from the front */
+    color: #000; /* Adjust text color for readability */
+    margin-top: 10px; /* Add spacing between the front and back content */
+}
   
-    /* Image adjustments */
-    .pg4-card-front img {
-      width: 80px; /* Resize image for small screens */
-      margin-bottom: 10px;
-    }
-  
-    .pg4-card-back h2, .pg4-card-front h2 {
-      font-size: 18px; /* Adjust font size */
-    }
-  
-    .pg4-card-back p, .pg4-card-front p {
-      font-size: 13px; /* Smaller font for readability */
-    }
-  
-    /* Adjusting the paragraph alignment */
-    .pg4-bottom-sub p {
-      text-align: center; /* Center text for consistency */
-    }
+/* Image adjustments */
+.pg4-card-front img {
+  width: 80px; /* Resize image for small screens */
+  margin-bottom: 10px;
+}
+.pg4-card-back h2, .pg4-card-front h2 {
+  font-size: 18px; /* Adjust font size */
+}
+.pg4-card-back p, .pg4-card-front p {
+  font-size: 13px; /* Smaller font for readability */
+}
+/* Adjusting the paragraph alignment */
+.pg4-bottom-sub p {
+  text-align: center; /* Center text for consistency */
+}
+
+.pg-4 h3 {
+  font-size: 18px;
+  color: #E0780E;
+}
   
 
 
@@ -3621,6 +3628,1243 @@ body.scrolled #header a {
     justify-content: space-around;
   }
 }
+
+
+
+/* Responsive for iPad Air and iPad mini */
+@media (min-width: 600px) and (max-width: 820px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+  }
+
+  section:target {
+    padding-top: 70px; /* Smaller header size */
+    margin-top: -70px; /* Same value as padding-top */
+  }
+
+/* Logo and Header design */
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+  }
+
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 15px;
+    padding:10px;
+    transition:all 0.3s;
+  }
+
+  .pc-nav {
+    display: none;
+  }
+
+ .sp-nav {
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  width: 100%;
+  color: #fff;
+  background: rgba(0, 0, 0, .9);
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all .2s ease-in-out;
+ }
+
+  #nav-ham {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 20px;
+    margin: 0 0 0 auto;
+  }
+
+  #nav-ham span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #E0780E;
+    transform: translateY(-50%);
+  }
+
+  #nav-ham::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #E0780E;
+  }
+
+  #nav-ham::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #E0780E;
+  }
+  
+  #nav-ham span, 
+  #nav-ham::before, 
+  #nav-ham::after {
+      height: 2px;
+  }
+
+  .sp-nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .sp-nav li {
+    margin: 0;
+    padding: 0;
+ }
+ .sp-nav li span {
+    font-size: 15px;
+    color: #E0780E;
+ }
+ .sp-nav li a, .sp-nav li span {
+    display: block;
+    padding: 20px 0;
+ }
+
+ .sp-nav .nav_close {
+  position: relative;
+  padding-left: 20px;
+}
+
+.sp-nav .nav_close::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 1px;
+  background: #fff;
+  transform: rotate( 45deg );
+}
+
+.sp-nav .nav_close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 1px;
+  background: #fff;
+  transform: rotate( -45deg );
+}
+
+.toggle {
+  transform: translateY( 0 );
+  opacity: 1;
+}
+
+#header {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.scrolled #header {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#header a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+body.scrolled #header a {
+  color: white !important;
+}
+
+.sp-lsn-btn {
+  color: #fff;
+  padding: 5px;
+  border: 3px solid #E0780E;
+  border-radius: 60px;
+  animation: bounceInButton 1.5s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sp-lsn-btn:hover {
+  transform: scale(1.1); /* Scale up the button on hover */
+  box-shadow: 10 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow for emphasis */
+}
+
+
+
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.scrolled #header {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#header a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+body.scrolled #header a {
+  color: black;
+}
+
+  .hd-h1 {
+    font-size: 18px;
+  }
+
+  .pg1-h1, .pg1-h2 {
+    font-size: 32px;
+    letter-spacing: 8px;
+  }
+
+
+/* Page1 Design for iPad Air and iPad mini */
+
+.pg-1 {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("../../content/img/1226_wide.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  margin-top: -100px;
+  padding-top: 100px;
+}
+
+.pg1-top-text, .pg1-bottom-text {
+  text-align: right; /* Center align on small screens */
+}
+
+  .pg1-top-text {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: right;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%; /* Responsive width */
+    text-align: left;
+    margin-top: 150px;
+    margin-left: 55px;
+    z-index: 2;
+  }
+  
+  .pg1-top-text h1 {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+
+  .pg1-bottom-text {
+    position: relative;
+    left: 10px;
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Align items vertically */
+    align-items: left; 
+    margin: 0 auto;
+    margin-left: 120px;
+    padding: 0;
+    width: 90%; /* Responsive width */
+    text-align: left;
+}
+
+.pg1-h3,
+.pg1-h1 {
+    margin: 0; /* Remove inconsistent margins */
+    padding: 0;
+    line-height: 1.2; /* Ensure consistent spacing */
+}
+
+.pg1-h3 {
+  font-size: 30px; /* Adjust to match the desired alignment */
+  margin-bottom: 10px;
+  margin-left: 70px;
+  letter-spacing: 3px;
+}
+
+.pg1-h1 {
+  font-size: 35px; /* Larger size for emphasis */
+  letter-spacing: 10px;
+}
+
+
+.pg1-2text p {
+  font-size: 15px;
+}
+
+.pg1-2 {
+  height: auto;
+  width: 100%;
+}
+
+.pg1-2-h1 {
+  text-align: center;
+  font-size: 25px;
+  color: #E0780E;  
+}
+
+.pg1-2text {
+  margin-bottom: 110px;
+}
+
+
+.pg1-2h2 {
+  font-size: 25px;
+  color: #E0780E;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pg1-2box {
+  height: auto;
+  width: 90%;
+  max-width: 1000px; /* Set a reasonable max-width */
+  margin: auto;
+  background-color: #fff;
+  color: #E0780E;
+  text-align: center;
+  border-radius: 30px;
+  border: single 5px #E0780E;
+  margin-bottom: 50px;
+  padding: 1px; /* Add padding to give some space around the content */
+}
+
+.pg1-2top-box {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.pg1-2top-box p {
+  font-size: 13px;
+  text-align: left;
+}
+
+.pg1-2bottom-box {
+  width: 100%;
+  margin-top: -60px; /* Set margin-top to 0 to remove space at the top */
+  order: 0; /* Ensure it's ordered before the other elements */
+}
+
+.pg1-2bottom-box img {
+  width: 250px;
+  height: 250px;
+  display: block; /* Make sure the image displays as a block-level element */
+  margin: 0 auto; /* Center the image */
+}
+
+
+/* Page2 Design for iPad Air and iPad mini */
+
+#pg-2 {
+  scroll-margin-top: 50px; /* Adjust for mobile if needed */
+  margin-bottom: 0;
+}
+
+.pg-2 {
+  height: auto;
+  width: 100%;
+}
+
+.pg2-subtext {
+  font-size: 18px; /* Slightly smaller font size for smaller screens */
+  padding: 30px 10px; /* Adjust padding for content */
+  background: linear-gradient(to right, #E0780E, #755B41); /* Keep existing gradient */
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%); /* Creates the shape */
+}
+
+ .pg2-subtext h2 {
+    font-size: 17px;
+ }
+ 
+ .pg2-subtext h3 {
+  font-size: 15px;
+}
+
+.pg2-bottom-box {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  animation: slideInBoxes 1.5s ease forwards;
+}
+
+.pg2-bottom-sub {
+  height: auto;
+  width: 45%;
+  text-align: center;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: double 5px #E0780E;
+}
+
+.pg2-box-p1 {
+  width: 47%;
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #E0780E;
+}
+
+@keyframes glowEffect {
+  0% {
+    box-shadow: 0 0 15px #E0780E;
+  }
+  100% {
+    box-shadow: 0 0 25px #E0780E;
+  }
+}
+
+.pg2-bottom-sub img {
+  margin-top: 20px;
+  width: 55x;
+  height: 55px;
+}
+
+.pg2-box-text {
+  font-size: 14px;
+  color: #E0780E;  
+}
+
+.pg2-box-text2 {
+  padding: 0 16px; /* Adds space on both sides */
+  text-align: justify; /* Aligns the text perfectly */
+  line-height: 1.5; /* Improves readability */
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+/* ▼ Page3 Design For iPad Air and iPad mini */
+.pg-3 {
+  height: 1000px;
+  background-color: #755B41;
+  width: 100%;
+}
+
+.pg3-h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.pg3-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pg3-up-sub {
+  margin: 1px;
+}
+
+.pg3-up-sub img {
+  height: auto;
+  width: 340px;
+  border: solid 3px #E0780E;
+}
+
+
+.pg3-up-h3 {
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 1px;
+  padding: 10px;
+  background-color: #E0780E;
+  margin-bottom: 5px;
+}
+
+.pg3-up-p {
+  margin-top: 5px; /* Reduce the top margin */
+}
+
+.pg3-up-p br {
+  display: none;
+}
+
+.pg3-down-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pg3-down-sub {
+  margin: 18px;
+}
+
+.pg3-down-sub img {
+  height: auto;
+  width: 340px;
+  border: solid 3px #E0780E;
+}
+
+.pg3-down-h3 {
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 1px;
+  padding: 10px;
+  background-color: #E0780E;
+  margin-bottom: 5px;
+}
+
+.pg3-down-p {
+  margin-top: 5px; /* Reduce the top margin */
+}
+
+.fade-in {
+  animation: fadeInAnimation 1.5s ease-in-out forwards;
+}
+
+.slide-in {
+  animation: slideInAnimation 1.5s ease-in-out forwards;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes fadeInAnimation {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideInAnimation {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.pg3-up-sub img, .pg3-down-sub img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pg3-up-sub img:hover, .pg3-down-sub img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background: linear-gradient(45deg, #755B41, #E0780E);
+  }
+  50% {
+      background: linear-gradient(45deg, #E0780E, #755B41);
+  }
+  100% {
+      background: linear-gradient(45deg, #755B41, #E0780E);
+  }
+}
+
+.pg-3 {
+  animation: gradientAnimation 3s infinite;
+}
+
+.pg3-down-p br {
+  display: none;
+}
+
+
+
+
+/* Page4 Design for iPad Air and iPad mini */
+.pg-4 {
+  height: 900px;
+  width: 100%;
+  padding: 10px;
+}
+  
+.pg4-h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.pg4-bottom-box {
+  display: flex;
+  justify-content: space-between; /* Ensures equal spacing between elements */
+  gap: 10px; /* Adds space between the cards */
+  align-items: stretch;
+  flex-direction: column; /* Stack the boxes vertically */
+  align-items: center;
+  width: 100%; /* Ensure the boxes take full width */
+}
+  
+.pg4-bottom-sub {
+  flex: 1;
+  min-height: 450px;
+  max-width: calc(25% - 10px); /* Limits maximum width to 25% */
+  margin-bottom: 20px; /* Add spacing between boxes */
+  padding: 10px;
+  height: 520px; /* Adjust the height to content size */
+  border: double 5px #E0780E; /* Ensure border is shown */
+  box-sizing: border-box; /* Include padding and borders in element's total width/height */
+}
+
+.pg4-bottom-sub p {
+  text-align: left !important;
+}
+  
+.pg4-card {
+  width: 100%;
+  height: auto;
+  transform: none; /* Disable the 3D flip transform */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pg4-card-front,
+.pg4-card-back {
+    width: 100%;
+    height: auto;
+    position: static; /* Remove positioning that causes reversing */
+    transform: none; /* Prevent rotation */
+    backface-visibility: visible; /* Ensure both sides are visible */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.pg4-card-back {
+    background-color: #f8f8f8; /* Provide a different background to distinguish it from the front */
+    color: #000; /* Adjust text color for readability */
+    margin-top: 10px; /* Add spacing between the front and back content */
+}
+  
+/* Image adjustments */
+.pg4-card-front img {
+  width: 80px; /* Resize image for small screens */
+  margin-bottom: 10px;
+}
+.pg4-card-back h2, .pg4-card-front h2 {
+  font-size: 13px; /* Adjust font size */
+}
+.pg4-card-back p, .pg4-card-front p {
+  font-size: 10px; /* Smaller font for readability */
+}
+/* Adjusting the paragraph alignment */
+.pg4-bottom-sub p {
+  text-align: center; /* Center text for consistency */
+}
+  
+.pg-4 h3 {
+  font-size: 18px;
+  color: #E0780E;
+}
+
+
+
+/* Student's Voice Design for iPad Air and iPad mini */
+#pg-student-voice {
+  margin-bottom: 0; /* Ensure consistent spacing */
+}
+
+.pg-student-voice {
+  height: auto;
+  padding: 40px;
+  background: repeating-linear-gradient(
+    45deg,
+    #755B41,
+    #755B41 10px,
+    #6a4f3a 10px,
+    #6a4f3a 20px
+);
+  text-align: center;
+  color: #E0780E;
+  min-height: 850px;
+}
+
+.pg-student-h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #E0780E;
+}
+
+.student-container {
+  display: flex;
+  margin-top: 60px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.student-voice {
+  background: #fff;
+  border: double 4px #E0780E;
+  padding: 15px;
+  width: calc(100% / 3 - 20px); /* Adjust width for three items with some spacing */
+  min-width: 0; /* Prevent overflow */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.student-voice:hover {
+  transform: scale(1.05);
+}
+
+.student-voice h3 {
+  font-size: 14px;
+  color: #E0780E;
+}
+
+.student-voice p {
+  font-size: 12px;
+  color: #333;
+  text-align: justify;
+}
+
+.student-voice img {
+  width: 180px;
+  height: 140px;
+  border: solid 3px #E0780E;
+}
+
+
+
+/* ▼ Page Five Design for iPad Air and iPad mini */
+#pg-5 {
+  margin-top: 0;
+}
+
+.pg-5 {
+  height: auto;
+  width: 100%;
+  background-color: #E0780E;
+  background: linear-gradient(45deg, #E0780E, #FFD600);
+  background-size: 300% 300%;
+  animation: gradientBG 6s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.pg5-h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  animation: bounceInTitle 1.5s ease-in-out;
+}
+
+@keyframes bounceInTitle {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pg5-h2 {
+  font-size: 55px;
+  color: #E0780E;
+  animation: pulseEffect 2s infinite;
+}
+
+@keyframes pulseEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.pg5-box {
+  height: auto;
+  width: auto;
+  max-width: 1000px; /* Set a reasonable max-width */
+  margin: auto;
+  background-color: #fff;
+  color: #E0780E;
+  text-align: center;
+  border-radius: 5px;
+  border: double 5px #E0780E;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.pg5-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.pg5-top-box {
+  line-height: 1px;
+}
+
+.pg5-top-box p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pg5-mid-box {
+  display: block;
+  width: auto;
+  border-bottom: 2px solid #E0780E;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.pg5-bottom-box {
+  width: auto;
+  margin: auto;
+  padding: 20px;
+}
+
+.pg5-bottom-box ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.pg5-bottom-box li {
+  position: relative;
+  font-size: 15px;
+}
+
+.pg5-bottom-box li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: .5em;
+  left: -1.5em;
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid #E0780E;
+  border-bottom: 2px solid #E0780E;
+  transform: rotate(-45deg);
+}
+
+.pg5-top-list {
+  border-bottom: 30px;
+}
+
+
+
+
+/* ▼ Page Six Design for iPad Air and iPad mini */
+.pg-6 {
+  height: auto;
+  width: auto;
+}
+
+.pg6-h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #E0780E;
+}
+
+.pg6-container {
+  display: flex;
+
+}
+
+.pg6-img {
+  width: auto;
+  margin-top: 80px;
+  margin-right: 50px;
+}
+
+.pg6-img img {
+  height: auto;
+  width: 250px;
+}
+
+.pg6-intro {
+  width: auto;
+  margin-right: 20px;
+  position: relative;
+  padding: 10px;
+  border: 3px solid #E0780E;
+  animation: borderPulse 3s infinite alternate;
+}
+
+@keyframes borderPulse {
+  0% {
+      box-shadow: 0 0 10px #E0780E;
+  }
+  100% {
+      box-shadow: 0 0 25px #E0780E;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeftAnimation 1.5s ease-in-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRightAnimation 1.5s ease-in-out forwards;
+}
+
+@keyframes slideInLeftAnimation {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInRightAnimation {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.pg6-img img {
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.pg6-img img:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.floating {
+  animation: floatingAnimation 3s ease-in-out infinite;
+}
+
+@keyframes floatingAnimation {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+
+
+
+/* ▼ Free Lesson Design for iPad Air and iPad mini */
+.free-lesson {
+  height: auto;
+  width: auto;
+  background-color: #E0780E;
+  background: linear-gradient(45deg, #E0780E, #FFD600);
+  background-size: 400% 400%;
+  animation: backgroundGradient 5s ease infinite;
+}
+
+@keyframes backgroundGradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.pgFL-h2 {
+  font-size: 25px;
+  color: #E0780E;
+  background: linear-gradient(90deg, #FFD600, #ffc400, #E0780E, #e06c0e, #e0620e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s infinite linear;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+@keyframes gradientMove {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+
+.pgFL-box {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  color: #E0780E;
+  text-align: center;
+  border-radius: 30px;
+  border: single 5px #E0780E;
+  margin: auto;
+  margin-top: 50px;
+  padding: 1px; /* Add padding to give some space around the content */
+  animation: floatBox 3s ease-in-out infinite;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.pgFL-box:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes floatBox {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+.pgFL-top-box {
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pgFL-top-box p {
+  font-size: 14px;
+}
+
+.pgFL-bottom-box {
+  width: 45%;
+  margin-top: 60px;
+}
+
+.pgFL-bottom-box p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+
+/* ▼ Page Seven Design for iPad Air and iPad mini */
+.pg-7 {
+  height: 3000px;
+  width: 100%;
+}
+
+.pg7-bottom-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.pg7-bottom-sub {
+  height: auto;
+  width: 220px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: solid 5px #E0780E;
+  animation: fadeSlideIn 1.5s ease-in-out forwards;
+}
+
+.pg7-bottom-sub:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pg7-bottom-sub:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.pg7-bottom-sub:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.pg7-bottom-sub:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+      transform: translateY(50px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.pg7-box-text {
+  font-size: 16px;
+  color: #E0780E;
+  margin-top: 0;
+}
+
+.pg7-box-p1 {
+  height: auto;
+  width: 40%;
+  font-size: 20px;
+  text-align: center;
+  padding: 4px;
+  color: #fff;
+  background-color: #E0780E;
+}
+
+.pg7-h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+
+
+
+/* Footer Design for iPad Air and iPad mini */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer_navi {
+  order: 1;
+  display: none; /* Hidden until new idea */
+  grid-template-columns: repeat(3, 1fr); /* Two rows with three items each */
+  gap: 10px; /* Spacing between items */
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer_navi li {
+  list-style: none; /* Remove bullet points */
+}
+
+.footer_navi a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer_navi a:hover {
+  color: #E0780E; /* Highlight color on hover */
+}
+
+.ft-h1 {
+  order: 2; /* Position the logo below the navigation */
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.ft-h1 img {
+  margin: 0 auto;
+  display: block;
+}
+
+.footer_social {
+  margin-left: 100px;
+}
+
+
+
+
+
+  .pg3-up-sub, .pg3-down-sub, .pg4-bottom-sub {
+    width: 45%;
+    margin-bottom: 15px;
+  }
+
+  .pg4-bottom-box {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+
+}
+
+
 
 /* Loading Screen Styles */
 #loading-screen {
