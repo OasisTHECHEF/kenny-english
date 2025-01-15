@@ -1101,11 +1101,11 @@ h1.bee::after {
   display: block;
   position: absolute;
   top: .5em;
-  left: -1.5em;
+  left: -1.2em;
   width: 10px;
   height: 5px;
-  border-left: 2px solid #E0780E;
-  border-bottom: 2px solid #E0780E;
+  border-left: 5px solid #E0780E;
+  border-bottom: 5px solid #E0780E;
   transform: rotate(-45deg);
 }
 
@@ -2348,7 +2348,7 @@ body.scrolled #header a {
   display: block;
   position: absolute;
   top: .5em;
-  left: 0;
+  left: 0.1em;
   width: 10px;
   height: 5px;
   border-left: 5px solid #E0780E;
@@ -3456,8 +3456,8 @@ body.scrolled #header a {
   left: -1.5em;
   width: 10px;
   height: 5px;
-  border-left: 2px solid #E0780E;
-  border-bottom: 2px solid #E0780E;
+  border-left: 5px solid #E0780E;
+  border-bottom: 5px solid #E0780E;
   transform: rotate(-45deg);
 }
 
@@ -4680,8 +4680,8 @@ body.scrolled #header a {
   left: -1.5em;
   width: 10px;
   height: 5px;
-  border-left: 2px solid #E0780E;
-  border-bottom: 2px solid #E0780E;
+  border-left: 5px solid #E0780E;
+  border-bottom: 5px solid #E0780E;
   transform: rotate(-45deg);
 }
 
