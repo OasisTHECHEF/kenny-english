@@ -671,7 +671,7 @@ h1.bee::after {
   font-size: 25px;
   margin-top: 1px;
   padding: 10px;
-  background-color: #E0780E;
+  background: linear-gradient(135deg, #E0780E, #755B41);
   margin-bottom: 5px;
 }
 
@@ -698,7 +698,7 @@ h1.bee::after {
   font-size: 25px;
   margin-top: 1px;
   padding: 10px;
-  background-color: #E0780E;
+  background: linear-gradient(135deg, #E0780E, #755B41);
   margin-bottom: 5px;
 }
 
@@ -828,6 +828,7 @@ h1.bee::after {
 
 .pg-4 h3 {
   padding-top: 20px;
+  color: #E0780E;
   text-align: center;
 }
 
@@ -973,11 +974,6 @@ h1.bee::after {
 }
 
 
-
-
-
-
-
 /* ▼ Page Five */
 #pg-5 {
   margin-top: 0;
@@ -1097,6 +1093,7 @@ h1.bee::after {
 .pg5-bottom-box li {
   position: relative;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .pg5-bottom-box li::after {
@@ -1114,6 +1111,10 @@ h1.bee::after {
 
 .pg5-top-list {
   border-bottom: 20px;
+}
+
+.pg5-top-list li {
+  font-weight: bold;
 }
 
 
@@ -1384,6 +1385,51 @@ h1.bee::after {
 }
 
 
+/* ▼  Commercial  ▼*/
+.commerce-h1  {
+  text-align: center;
+  font-size: 40px;
+  color: #E0780E;  
+}
+
+.commerce-info-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  height: auto;          /* Full viewport height */
+  margin: 0;
+}
+
+.commerce-info {
+  width: 100%; /* Adjust this width as needed for your content */
+  max-width: 600px; /* Optional: Limit the maximum width */
+  background-color: #fff; /* Optional: Add a background color */
+  padding: 20px; /* Optional: Add padding for better spacing */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.commerce-info dl {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: flex-start;
+  border-bottom: 2px solid #F4AA61;
+}
+
+.commerce-info dt {
+  width: 200px; /* Adjust this width as necessary */
+  font-weight: bold;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.commerce-info dd {
+  margin: 0;
+  flex-grow: 1;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
 
 
 
@@ -1393,7 +1439,7 @@ h1.bee::after {
 hr {
   height: 1px;
   border: 0;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid #F4AA61;
 }
 
 .grid {
@@ -1494,6 +1540,11 @@ hr {
 .footer_social a:not(:last-child) {
   margin-right: 16px;
 }
+
+.legal-links a:hover {
+  color: #E0780E;
+}
+
 
 @media (min-width: 768px) {
   .md-flex {
@@ -2458,6 +2509,56 @@ body.scrolled #header a {
 }
 
 
+/* ▼  Commercial Design for SP  ▼*/
+.commerce-h1  {
+  text-align: center;
+  font-size: 25px;
+  color: #E0780E;  
+}
+
+.commerce-info-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  height: auto;          /* Full viewport height */
+  margin: 0;
+}
+
+.commerce-info {
+  width: 100%; /* Adjust this width as needed for your content */
+  max-width: 600px; /* Optional: Limit the maximum width */
+  background-color: #fff; /* Optional: Add a background color */
+  padding: 20px; /* Optional: Add padding for better spacing */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.commerce-info dl {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: flex-start;
+  border-bottom: 2px solid #F4AA61;
+  font-size: 11px;
+}
+
+.commerce-info dt {
+  width: 150px; /* Adjust this width as necessary */
+  font-weight: bold;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.commerce-info dd {
+  margin: 0;
+  flex-grow: 1;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+
+
+
+
 
 /* Footer Design for SP */
 .footer {
@@ -2508,6 +2609,14 @@ body.scrolled #header a {
 
 .footer_social {
   margin-left: 100px;
+}
+
+.legal-links {
+  font-size: 10px;
+}
+
+.legal-links a:hover {
+  color: #E0780E;
 }
 
   .pg-2, .pg-3, .pg-5, .pg-6 {
@@ -3625,6 +3734,52 @@ body.scrolled #header a {
 }
 
 
+/* ▼  Commercial Design For Tablets  ▼*/
+.commerce-h1  {
+  text-align: center;
+  font-size: 40px;
+  color: #E0780E;  
+}
+
+.commerce-info-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  height: auto;          /* Full viewport height */
+  margin: 0;
+}
+
+.commerce-info {
+  width: 100%; /* Adjust this width as needed for your content */
+  max-width: 600px; /* Optional: Limit the maximum width */
+  background-color: #fff; /* Optional: Add a background color */
+  padding: 20px; /* Optional: Add padding for better spacing */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.commerce-info dl {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: flex-start;
+  border-bottom: 2px solid #F4AA61;
+}
+
+.commerce-info dt {
+  width: 150px; /* Adjust this width as necessary */
+  font-weight: bold;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.commerce-info dd {
+  margin: 0;
+  flex-grow: 1;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+
 
 
 
@@ -4268,13 +4423,14 @@ body.scrolled #header a {
   max-width: calc(25% - 10px); /* Limits maximum width to 25% */
   margin-bottom: 20px; /* Add spacing between boxes */
   padding: 10px;
-  height: 520px; /* Adjust the height to content size */
+  height: 515px; /* Adjust the height to content size */
   border: double 5px #E0780E; /* Ensure border is shown */
   box-sizing: border-box; /* Include padding and borders in element's total width/height */
 }
 
 .pg4-bottom-sub p {
   text-align: left !important;
+  font-size: 9px !important;
 }
   
 .pg4-card {
